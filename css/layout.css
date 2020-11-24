@@ -62,9 +62,25 @@
 /* == 검색영역 e == */
 
 /* == page_tit s == */
-.sta_tit_wrap{overflow:hidden;position:relative;width:100%;background-color:#DADADA;}
-.sta_tit_wrap .sta_tit{position:relative;width:1400px;height:90px;margin:0 auto;}
-.sta_tit h1{font-family:'NotoS_B';font-size:38px;line-height:90px;text-align:center;}
+.sta_tit_wrap {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height:90px;
+    background:#dadada url("../images/tit_bg.png") repeat-x;}
+
+.sta_tit_wrap .sta_tit {
+    position: relative;
+    width: 1400px;
+    height: 90px;
+    margin: 0 auto;
+}
+.sta_tit h1 {
+    font-family: 'NotoS_B';
+    font-size: 38px;
+    line-height: 90px;
+    text-align: center;
+}
 /* == page_tit e == */
 
 /* == snbTab s == */
@@ -145,7 +161,12 @@
 .listBox .box_left .clientDate span{padding-right:3px;font-size:16px;color:rgba(40,40,40,.64)}
 
 .listBox .box_left .clientDate .i_calen{padding-left:18px;line-height:24px;background:url("../images/icon_calendar.png") no-repeat 0 5px;}
-.listBox .box_left .keyword{position:relative;font-size:0;}
+.listBox .box_left .keyword {
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+    height: 27px;
+}
 .listBox .box_left .keyword .txt{display:inline-block;height:27px;padding:0 16px;margin-right:6px;border-radius:27px;background-color:#F5F5F5;font-size:15px;line-height:24px;}
 
 .listBox .box_right{overflow:hidden;display:flex;position:relative;width:384px;background-color:#F9FAFB;}
