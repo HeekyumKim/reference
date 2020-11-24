@@ -6,18 +6,18 @@
 .fl{float:left}
 .fr{float:right}
 
+/* positon */
+.fixed{position:fixed !important}
 
 /* overflow, clear */
 .ofh{overflow: hidden !important;}
-.clear::after {
-    content: '';
-    display: block;
-    clear: both;
-}
+.clear::after{content:'';display:block;clear:both;}
 
 
 /* width */
 .w100{width: 100% !important;}
+
+
 /* Margin */
 
 /* *위* */
