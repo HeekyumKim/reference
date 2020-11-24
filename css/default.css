@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/** Reset **/
+html,body {width:100%; height:100%;}
+
+*, *:before, *:after{-webkit-box-sizing: border-box; -moz-box-sizing:border-box; box-sizing:border-box}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0;padding:0}
+body, h1,h2,h3,h4,input,button{ 
+	font-family:"NotoS_R","Malgun Gothic", "Dotum", "Gulim", "tahoma";
+	font-size:12px;
+	color:#282828;
+	text-align:left;
+	line-height:120%;
+	text-decoration:none;
+	border-collapse:collapse;
+	margin:0px;
+	scrollbar-arrow-color: #000000;/*bar화살표컬러*/
+	scrollbar-highlight-color:#ffffff;/*bar하이라이트컬러*/
+	scrollbar-shadow-color: #B4B4B4;/*bar그림자컬러*/
+	scrollbar-darkshadow-color:#EEEEEE;/*bar바탕의 어두운부분컬러*/
+	scrollbar-3dlight-color: #EEEEEE;/*bar하이라이트컬러*/
+	scrollbar-track-color: #FAFAFA;/*bar 없는 곳 기본 컬러*/
+	scrollbar-face-color: #EEEEEE;/*bar기본컬러*/
+    word-break:break-all;
+	-ms-word-break:break-all} 
+img,fieldset,iframe {border:0 none}
+li {list-style:none}
+input,select,button {vertical-align:middle}
+img{vertical-align:top}
+i,em,address{font-style:normal}
+button{position:relative; width:auto; margin:0; padding:0; border: 0; background: transparent; cursor:pointer; outline: none}
+button{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+button img{left:auto}
+option{padding-right:6px}
+hr{display:none; -webkit-box-sizing:content-box; -moz-box-sizing:content-box; box-sizing:content-box}
+legend{*width:0}
+table{width:100%; border-collapse:collapse; border-spacing:0}
+caption{display: none}
+td,th {padding: 0;}
+input, textarea{font-family:NotoS_R; -webkit-box-sizing:border-box;-moz-box-sizing:border-box; box-sizing:border-box}
+input:-ms-clear{display:none}
+input::-webkit-input-placeholder{color:#9a9a9a}
+input:-moz-placeholder{color:#9a9a9a}
+input:-ms-input-placeholder{color:#9a9a9a}
+input[type=text]:disabled {background: #eeeeee; color:#919191}
+textarea {vertical-align:middle; resize:vertical /*none:조절불가, both:가로/세로 조절 가능, horizontal:가로 조절만 가능, vertical:세로조절만 가능*/}
+
+
+/* ie 검색어 삭제 버튼 안보이기 */
+input::-ms-clear,input::-ms-reveal {display: none; width : 0; height: 0;} 
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+
+
+/* a link */
+a:link{color:#282828; text-decoration:none;}
+a:focus{outline: none}
+a:visited{color:#282828; text-decoration:none}
+a:active{color:#282828; text-decoration:none}
+a:hover{color:#282828; text-decoration:none}
+
+
+/* 숨김영역 */
+hr,legend,caption{position:absolute;width:0;height:0;line-height:0;overflow:hidden;text-indent:-2000px;left:-500px;}
+
+/* u_skip */
+#u_skip{position:relative;z-index:1000;}
+#u_skip a{position:absolute;top:-100px;left:0;width:100px;height:20px;background:#333;color:#fff;text-align:center;line-height: 20px}
+#u_skip a:active,#u_skip a:focus,#u_skip a:hover{top:0;}
+
+
+/* font- NotoS */
+@font-face {
+	font-family: 'NotoS_L';
+	font-style: normal;
+	font-weight: 200;
+	src: url(../font/NotoSansKR-Light.eot),
+		 url(../font/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'),
+		 url(../font/NotoSansKR-Light.woff2) format('woff2'),
+		 url(../font/NotoSansKR-Light.woff) format('woff'),
+		 url(../font/NotoSansKR-Light.otf) format('opentype');
+  } 
+  @font-face {
+	font-family: 'NotoS_R';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/NotoSansKR-Regular.eot),
+		 url(../font/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+		 url(../font/NotoSansKR-Regular.woff2) format('woff2'),
+		 url(../font/NotoSansKR-Regular.woff) format('woff'),
+		 url(../font/NotoSansKR-Regular.otf) format('opentype');
+  }
+  @font-face {
+	font-family: 'NotoS_M';
+	font-style: normal;
+	font-weight: 600;
+	src: url(../font/NotoSansKR-Medium.eot),
+		 url(../font/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+		 url(../font/NotoSansKR-Medium.woff2) format('woff2'),
+		 url(../font/NotoSansKR-Medium.woff) format('woff'),
+		 url(../font/NotoSansKR-Medium.otf) format('opentype');
+  }
+  @font-face {
+	font-family: 'NotoS_B';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../font/NotoSansKR-Bold.eot),
+		 url(../font/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+		 url(../font/NotoSansKR-Bold.woff2) format('woff2'),
+		 url(../font/NotoSansKR-Bold.woff) format('woff'),
+		 url(../font/NotoSansKR-Bold.otf) format('opentype');
+  }
+  
+  
+

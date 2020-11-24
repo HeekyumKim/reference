@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@import url('default.css');  /* Reset, font */
+
+/* float */
+.fl{float:left}
+.fr{float:right}
+
+
+/* overflow, clear */
+.ofh{overflow: hidden !important;}
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* width */
+.w100{width: 100% !important;}
+/* Margin */
+
+/* *위* */
+.mgt10{margin-top: 10px}
+
+/* *오른쪽* */
+.mgr10{margin-right: 10px}
+
+/* *아래* */
+.mgb30{margin-bottom: 30px}
+
+/* *왼쪽* */
+.mgl10{margin-left: 10px}
+.mgl20{margin-left: 20px}
+
+
+/* Padding */
+
+/* *위* */
+
+
+/* *오른쪽* */
+
+/* *아래* */
+
+/* *왼쪽* */
+
+
+/* Text-align */
+.tal{text-align:left !important}
+.tar{text-align:right !important}
+.tac{text-align:center !important}
+
+/* Vertical-align */
+.vam{vertical-align:middle;}
+.vat{vertical-align:top;}
+.vab{vertical-align:bottom}
+
+/* Border */
+.bl0{border-left:0px !important}
+.br0{border-right:0px !important}
+.bt0{border-top:0px !important}
+.bb0{border-bottom:0px !important}
+
+
+/* common */
+.blind {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/* form */
+input[type="text"], input[type="password"],textarea {
+	display: inline-block;
+	width: auto;
+	padding: 12px;
+	background-color: #fff;
+  border: 1px solid #dadada;
+  color:#282828;
+	font-size: 15px;
+}
+
+.form_group{
+  position: relative;
+  margin-bottom: 21px;
+}
+
+.form_group .control_label{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #282828;
+  line-height: 1;
+}
+
+
+.form_group .form_control {
+  width: 100%;
+  padding: 10px 17px;
+  height: 46px;
+  border: 1px solid #dadada;
+  font-size: 18px;
+  line-height: 1;
+  outline-color: #2782CE;
+}
+
+
+
+/* 버튼 */
+.btn_area{position:absolute;top:30px;right:0;font-size:0;}
+.btn_area > button:last-child{margin-right:0;}
+.btn{margin-right:6px;width:70px;height:30px;padding:5px 20px;border:1px solid #666666;border-radius:3px;font-size:15px;text-align:center;text-decoration:none;cursor:pointer;}
+
+.col_black{background-color:#444444;font-family:NotoS_B;color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
