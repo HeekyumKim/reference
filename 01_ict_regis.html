@@ -32,8 +32,8 @@
                <h1>
                   <a href="#"><span class="blind">네오넥스소프트</span></a>
                </h1>
-
-               <div class="gnbArea">         
+   
+               <div class="gnbArea">
                   <div class="subnav">
                      <button class="subnavbtn">레퍼런스</button>
                      <div class="subnav_content">
@@ -41,7 +41,7 @@
                         <a href="#">솔루션사업본부</a>
                      </div>
                   </div>
-
+   
                   <div class="subnav">
                      <button class="subnavbtn">관리자메뉴</button>
                      <div class="subnav_content">
@@ -53,7 +53,7 @@
                   </div>
                </div>
             </div>
-
+   
             <div class="login_area">
                <span class="regis"><a href="#">프로젝트 등록</a></span>
                <span class="user_info">홍길동</span>
@@ -63,66 +63,236 @@
       </div>
       <!-- //header -->
    
+      <!-- sticky -->
+      <div class="sta_wrap" id="sti">
+      <!-- page_tit s-->
+      <div class="sta_tit_wrap">
+         <div class="sta_tit">
+            <h1>프로젝트 등록</h1>
+            <div class="btn_area">
+               <button type="button" class="btn col_black">저장</button>
+               <button type="button" class="btn ">취소</button>
+            </div>
+         </div>
+      </div>
+      <!-- page_tit e-->
+      </div>
+      <!-- //sticky -->
+   
       <!-- container -->
       <div id="container">
    
-         <!-- page_tit S-->
-         <div class="sta_tit_wrap">
-            <div class="sta_tit">
-               <h1>프로젝트 등록</h1>
-               <div class="btn_area">
-                  <button type="button" class="btn col_black">저장</button>
-                  <button type="button" class="btn ">취소</button>
-               </div>
-            </div>
-         </div>
-       <!-- page_tit E-->
-
+   
          <!-- content_wrap S-->
          <div class="content_wrap">
-         
-            <!-- formList_wrap s -->
-            <div class="formList_wrap">
-               <div class="form_area">         
-                   
+   
+            <!-- formbg_wrap s -->
+            <div class="formbg_wrap">
+               <div class="form_area">
+            
                   <div class="form_group">
                      <label class="control_label">사업부 선택</label>
-                     <input type="text" name="" value="" placeholder="내용입력" class="form_control">
+                     <div class="rc_wrap">
+                        <div class="radio_default">
+                           <input type="radio" id="ict" name="depart" value="" />
+                           <label for="ict">ICT사업본부</label>
+                        </div>
+                        <div class="radio_default">
+                           <input type="radio" id="cti" name="depart" value="" checked />
+                           <label for="cti">솔루션사업본부</label>
+                        </div>
+                     </div>
                   </div>
+            
                   <div class="form_group">
-                     <label class="control_label">사업부 선택</label>
+                     <label class="control_label">프로젝트 명</label>
                      <input type="text" name="" value="" placeholder="프로젝트명 입력" class="form_control">
                   </div>
+            
+                  <div class="form_groupRow">
+                     <div class="form_group">
+                        <label class="control_label">고객사</label>
+                        <input type="text" name="" value="" placeholder="고객사명" class="form_control">
+                     </div>
+                     <div class="form_group">
+                        <label class="control_label">PM/PL</label>
+                        <input type="text" name="" value="" placeholder="예)홍길동부장/김태희차장" class="form_control">
+                     </div>
+                     <div class="form_group">
+                        <label class="control_label">프로젝트수행일</label>
+                        <input type="text" name="" value="" placeholder="2020.10" class="form_control">
+                     </div>
+                  </div>
+            
                   <div class="form_group">
                      <label class="control_label">사업개요</label>
-                     <input type="text" name="" value="" placeholder="사업개요 입력" class="form_control">
-
-                     <div class="sec_line" ></div>
+                     <textarea name="" id="" cols="30" rows="10" class="text_control" placeholder="사업개요입력"></textarea>
+                  </div>
             
-
+                  <div class="form_group">
+                     <label class="control_label">키워드</label>
+                     <input type="text" name="" value="" placeholder="키워드 입력후 엔터" class="form_control">
+                     <div class="keyword_re">
+                        <span class="txt">#IoT</span>
+                        <span class="txt">#롯데렌탈</span>
+                        <span class="txt">#관제</span>
+                        <span class="txt">#주차주차주차주차</span>
+                        <span class="txt">#IoT</span>
+                        <span class="txt">#롯데렌탈</span>
+                        <span class="txt">#롯데렌탈롯데렌탈</span>
+                        <span class="txt">#IoT</span>
+                        <span class="txt">#IoT</span>
+                        <span class="txt">#IoT</span>
+                        <span class="txt">#롯데렌탈</span>
+                        <span class="txt">#관제</span>
+                        <span class="txt">#주차주차주차주차</span>
+                        <span class="txt">#IoT</span>
+                        <span class="txt">#롯데렌탈</span>
+                        <span class="txt">#관제</span>
+                        <span class="txt">#주차</span>
+                        <span class="txt">#롯데렌탈</span>
+                        <span class="txt">#IoT</span>
+                        <span class="txt">#IoT</span>
+                     </div>
+            
+                  </div>
+            
+                  <div class="form_group">
+                     <label class="control_label">비고</label>
+                     <input type="text" name="" value="" placeholder="프로젝트 진행시 특이사항 입력" class="form_control">
+                  </div>
+            
+                  <div class="form_group mgb32">
+                     <label class="control_label">첨부파일</label>
+                     <div class="fileForm mgb9">
+                        <input type="text" name="" value="" placeholder="파일을 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요." class="form_control">
+                        <input type="text" name="" value="" placeholder="파일 간략설명 입력" class="form_control">
+                        <div class="btn_plusMinus">
+                           <button type="button" class="btn_pm plus mgr6" disabled>＋</button>
+                           <button type="button" class="btn_pm minus">－</button>
+                        </div>
+                     </div>
+                     <div class="fileForm">
+                        <input type="text" name="" value="" placeholder="파일을 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요." class="form_control">
+                        <input type="text" name="" value="" placeholder="파일 간략설명 입력" class="form_control">
+                        <div class="btn_plusMinus">
+                           <button type="button" class="btn_pm plus mgr6">＋</button>
+                           <button type="button" class="btn_pm minus">－</button>
+                        </div>
+                     </div>
+            
+                  </div>
+            
+<!--             
+                  <div class="sec_line"></div> -->
+            
                </div>
-         
             </div>
-            <!-- formList_wrap e -->
+            <!-- formbg_wrap e -->
+
             <!-- img_wrap s -->
-            <div class="img_wrap">ddd</div>
+            <div class="img_wrap">
+
+               <div class="form_group">
+                  <label class="control_label">이미지 등록</label>
+                  <div class="imgRegi_area">
+                     <a href="#">
+                        <div class="imgRegi_info">
+                           <img src="./images/img.png" alt="첨부파일 아이콘">
+                           <p class="info_tit">이미지를 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요.
+                           </p>
+                           <p class="info_tits">Web화면사이즈 가로 1200px사이즈 / Mobile화면사이즈 가로 360px사이즈 기준 정비율 자동 축소,확대
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="dflex">                  
+                     <div class="select_box mgb10">
+                        <select id="" title="select" class="view_select">
+                           <option value="">Web화면</option>                         
+                           <option value="">Mobile화면</option>                          
+                        </select>
+                     </div>
+
+                     <input type="text" name="" value="" placeholder="화면 간략설명 입력" class="form_control">                   
+                  </div>
+                  <textarea name="" id="" cols="30" rows="10" class="text_control" placeholder="사업개요입력"></textarea>
+                  <div class="btn_plusMinus mgt25">
+                     <button type="button" class="btn_pm plus mgr6">＋</button>
+                     <button type="button" class="btn_pm minus">－</button>
+                  </div>
+               </div>
+
+               <div class="form_group">
+                  <label class="control_label">이미지 등록</label>
+                  <div class="imgRegi_area">
+                     <a href="#">
+                        <div class="imgRegi_info">
+                           <img src="./images/img.png" alt="첨부파일 아이콘">
+                           <p class="info_tit">이미지를 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요.
+                           </p>
+                           <p class="info_tits">Web화면사이즈 가로 1200px사이즈 / Mobile화면사이즈 가로 360px사이즈 기준 정비율 자동 축소,확대
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="dflex">                  
+                     <div class="select_box mgb10">
+                        <select id="" title="select" class="view_select">
+                           <option value="">Web화면</option>                         
+                           <option value="">Mobile화면</option>                          
+                        </select>
+                     </div>
+
+                     <input type="text" name="" value="" placeholder="화면 간략설명 입력" class="form_control">                   
+                  </div>
+                  <textarea name="" id="" cols="30" rows="10" class="text_control" placeholder="사업개요입력"></textarea>
+                  <div class="btn_plusMinus mgt25">
+                     <button type="button" class="btn_pm plus mgr6">＋</button>
+                     <button type="button" class="btn_pm minus">－</button>
+                  </div>
+               </div>
+
+            </div>
             <!-- img_wrap e -->
-         
-         
-         
+   
+   
+   
          </div>
-         <!-- content_wrap E-->        
+         <!-- content_wrap E-->
       </div>
       <!-- //container -->
-
+   
       <!-- footer -->
       <div class="footer">
          Copyright 2020 . NEONEXSoft Inc. All Rights Reserved.
-      </div> 
+      </div>
       <!-- //footer -->
    </div>
 
    <div id="topBtn"><img src="./images/top.png" alt="top버튼" width=100%></div>
+
+
+<!-- 스티키 -->
+<script>
+   window.onscroll = function () { myFunction() };
+
+   var navbar = document.getElementById("sti");
+
+   var sticky = navbar.offsetTop;
+
+   function myFunction() {
+      if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+      } else {
+         navbar.classList.remove("sticky");
+      }
+   }
+</script>
+
+
 
 </body>
 

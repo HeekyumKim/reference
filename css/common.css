@@ -2,6 +2,10 @@
 
 @import url('default.css');  /* Reset, font */
 
+/* display */
+.dflex {display: -webkit-box;display: -ms-flexbox;display: flex !important;}
+.dfb{display: block;}
+
 /* float */
 .fl{float:left}
 .fr{float:right}
@@ -22,12 +26,16 @@
 
 /* *위* */
 .mgt10{margin-top: 10px}
+.mgt25{margin-top: 25px !important}
 
 /* *오른쪽* */
-.mgr10{margin-right: 10px}
+.mgr6{margin-right: 6px !important}
+.mgr10{margin-right: 10px }
 
 /* *아래* */
-.mgb30{margin-bottom: 30px}
+.mgb9{margin-bottom: 9px !important}
+.mgb10{margin-bottom: 10px !important}
+.mgb32{margin-bottom: 32px !important}
 
 /* *왼쪽* */
 .mgl10{margin-left: 10px}
@@ -80,12 +88,25 @@ input[type="text"], input[type="password"],textarea {
 	padding: 12px;
 	background-color: #fff;
   border: 1px solid #dadada;
-  color:#282828;
 	font-size: 15px;
+}
+
+.form_groupRow{
+  position: relative;
+  display: -webkit-box;  display: -ms-flexbox;  display: flex;
+}
+.form_groupRow > .form_group{
+  width: 392px;
+  margin-right: 10px;
+  margin-bottom: 21px;
+}
+.form_groupRow > .form_group:last-child{
+  margin-right: 0px;
 }
 
 .form_group{
   position: relative;
+  width: 100%;
   margin-bottom: 21px;
 }
 
@@ -93,19 +114,108 @@ input[type="text"], input[type="password"],textarea {
   display: block;
   margin-bottom: 5px;
   font-size: 13px;
+  font-family: 'NotoS_B';
   color: #282828;
   line-height: 1;
 }
-
 
 .form_group .form_control {
   width: 100%;
   padding: 10px 17px;
   height: 46px;
   border: 1px solid #dadada;
+  border-radius: 4px;
   font-size: 18px;
   line-height: 1;
   outline-color: #2782CE;
+}
+
+.form_group .text_control{
+  width: 100%;
+  padding: 10px 17px;
+  height: 138px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 1.2;
+  outline-color: #2782CE;
+}
+
+
+
+
+/* 라디오,체크 */
+.rc_wrap{
+  position: relative;
+  width: 100%;
+  height: 46px;
+  padding: 10px 17px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	overflow: hidden;
+	display: none;
+	width: 0px;
+	height: 0px;
+	border: 0 none;
+	font-size: 0;
+	line-height: 0;
+	clip: rect(0 0 0 0);
+	opacity: 0;
+}
+
+.check_default,
+.radio_default {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.radio_default input[type="radio"],
+.check_default input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0 none;
+    margin: 0;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+}
+.radio_default label {
+    display: inline-block;
+    height: 16px;
+    padding-left: 25px;
+    margin-top: 4px;
+    font-size: 18px;
+    line-height: 1;
+    background: url("../images/radio.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.check_default label {
+    display: inline-block;
+    padding-left: 25px;
+    height: 17px;
+    margin-top: 4px;
+    font-size: 18px;
+    line-height: 1;
+    background: url("../images/checkbox.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.radio_default input[type="radio"]:checked + label{
+  background-position: 0 -16px;
+}
+.check_default input[type="checkbox"]:checked + label {
+  background-position: 0 -17px;
 }
 
 
@@ -113,13 +223,80 @@ input[type="text"], input[type="password"],textarea {
 /* 버튼 */
 .btn_area{position:absolute;top:30px;right:0;font-size:0;}
 .btn_area > button:last-child{margin-right:0;}
-.btn{margin-right:6px;width:70px;height:30px;padding:5px 20px;border:1px solid #666666;border-radius:3px;font-size:15px;text-align:center;text-decoration:none;cursor:pointer;}
+.btn {   
+    width: 70px;
+    height: 30px;
+    margin-right: 6px;
+    padding: 5px 20px;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .col_black{background-color:#444444;font-family:NotoS_B;color:#fff;}
+.btn_plusMinus{overflow:hidden;font-size:0;width:94px;height:44px;margin: 0 auto;}
+.btn_plusMinus > button{width:44px;height:44px;border-radius:3px;background-color:#666666;font-family:NotoS_B;font-size:25px;color:#fff;line-height:44px;text-align:center;text-decoration:none;cursor:pointer;}
+.btn_plusMinus > button:disabled{background-color:rgba(102,102,102,.25);}
 
 
+/* 셀렉트 박스*/
+
+/* 셀렉트 박스*/
+select {
+  width: 100%;
+	height: 46px;
+  padding: 10px 17px;
+  border: 1px solid #dadada;
+  font-size: 18px;
+	-webkit-appearance: none;/* 화살표 없애기 for chrome*/
+	-moz-appearance: none; /* 화살표 없애기 for firefox*/
+	appearance: none;
+}
+
+select::-ms-expand {
+	display:none;	/* 화살표 없애기 for IE10,11*/
+}
 
 
+.select_box {
+	position: relative;
+  width: 254px;
+  height:46px;
+  margin-right: 12px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+ 
+}
+
+
+.select_box::before {
+	content: '';
+	position: absolute;
+	right: 12px;
+	top: 18px;
+	width: 14px;
+	height: 8px;
+	background: url("../images/select_arrow.png") center no-repeat;
+}
+
+
+.select_box select.view_select {
+	position: relative;
+	width: 254px;
+	height: 46px;
+  padding: 10px 17px;
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* 화살표 보여지는 부분*/
+}
 
 
 
