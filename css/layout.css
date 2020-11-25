@@ -440,6 +440,10 @@
     margin: 0 auto;
 }
 
+.content_wrap .listWrap.admin {
+    padding-top: 40px;
+}
+
 /* = content s = */
 .content_list {
     overflow: hidden;
