@@ -789,6 +789,10 @@
     margin-right: 30px;
 }
 
+.wrap_user ul.row li.box_user.edit {
+    border: 2px solid #2782CE;
+}
+
 .wrap_user ul.row li.box_user:last-child {
     margin-right: 0px;
 }
