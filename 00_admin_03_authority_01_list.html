@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>레퍼런스사이트</title>
+
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css">
+
+    <!-- 스크립트 -->
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <!-- <script  type="text/javascript" src="./js/jquery-1.11.2.min.js"></script> -->
+    <script type="text/javascript" src="./js/moment.min.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+
+            $('#date').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
+
+            $('#date').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                    'YYYY/MM/DD'));
+            });
+
+            $('#date').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- u_skip -->
+    <div id="u_skip">
+        <a href="#container">본문 바로가기</a></li>
+    </div>
+    <!-- //u_skip -->
+
+    <div id="wrap">
+        <!-- header -->
+        <div class="header_wrap">
+            <div class="header">
+                <div class="gnb_group">
+                    <h1>
+                        <a href="#"><span class="blind">네오넥스소프트</span></a>
+                    </h1>
+
+                    <div class="gnbArea">
+                        <div class="subnav">
+                            <button class="subnavbtn">레퍼런스</button>
+                            <div class="subnav_content">
+                                <a href="#">ICT 사업본부</a>
+                                <a href="#">솔루션사업본부</a>
+                            </div>
+                        </div>
+
+                        <div class="subnav">
+                            <button class="subnavbtn">관리자메뉴</button>
+                            <div class="subnav_content">
+                                <a href="#">이력관리</a>
+                                <a href="#">사용자관리</a>
+                                <a href="#">권한관리</a>
+                                <a href="#">공통코드 관리</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login_area">
+                    <span class="regis"><a href="#">프로젝트 등록</a></span>
+                    <span class="user_info">홍길동</span>
+                    <span class="login"><a href="#">로그아웃</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- //header -->
+
+        <!-- sticky -->
+        <div class="sta_wrap" id="sti">
+            <!-- page_tit s-->
+            <div class="sta_tit_wrap">
+                <div class="sta_tit">
+                    <h1 class="admin">권한관리</h1>
+                    <div class="btn_area">
+                        <button type="button" class="btn col_black">등록</button>
+                    </div>
+                </div>
+            </div>
+            <!-- page_tit e-->
+
+            <!-- snbTab s-->
+            <div class="snbTab_wrap">
+                <div class="snb_wrap">
+                    <ul>
+                        <li class="snbtit"><a href="#"><span class="blind">화살표</span>이력관리</a></li>
+                        <li class="snbtit"><a href="#"><span class="blind">화살표</span>사용자관리</a></li>
+                        <li class="snbtit"><a href="#" class="active"><span class="blind">화살표</span>권한관리</a></li>
+                        <li class="snbtit"><a href="#"><span class="blind">화살표</span>공통코드관리</a></li>
+                    </ul>
+                </div>
+                <!-- //snb -->
+            </div>
+            <!-- snbTab e-->
+        </div>
+        <!-- //sticky -->
+
+        <!-- container -->
+        <div id="container">
+
+            <!-- content_wrap S-->
+            <div class="content_wrap">
+                <!-- listWrap -->
+                <div class="listWrap admin">
+
+                    <!-- content s-->
+                    <div class="content_list">
+                        
+                        <!-- table list -->
+                        <div class="tbl_wrap_list">
+                            <table class="tbl_list" summary="테이블 입니다. 항목으로는 등이 있습니다">
+                                <caption>테이블</caption>
+                                <colgroup>
+                                    <col width="" />
+                                    <col width="" />
+                                    <col width="200px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">권한명</th>
+                                        <th scope="col">사용여부</th>
+                                        <th scope="col">다운로드일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>최고관리자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>사용자</td>
+                                        <td>미사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>ICT 관리자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>CTI 사용자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>최고관리자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>사용자</td>
+                                        <td>미사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>ICT 관리자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>CTI 사용자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>CTI 사용자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>CTI 사용자</td>
+                                        <td>사용</td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td colspan="3" class="nodata">등록된 데이터가 없습니다.</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table list -->
+                        <!-- Pagination -->
+                        <div class="pagination mgt27">
+                            <a class="btn_first off" href="#"></a>
+                            <a class="btn_prev off" href="#"></a>
+                            <span class='wrap'>
+                                <a href='#' class='on'>1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </span>
+                            <a class="btn_next" href="#"></a>
+                            <a class="btn_last" href="#"></a>
+                        </div>
+                        <!-- //Pagination -->
+
+                    </div>
+                    <!-- content e -->
+
+                </div>
+                <!-- //listWrap -->
+
+            </div>
+            <!-- content_wrap E-->
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <div class="footer">
+            Copyright 2020 . NEONEXSoft Inc. All Rights Reserved.
+        </div>
+        <!-- //footer -->
+    </div>
+
+    <div id="topBtn"><img src="./images/top.png" alt="top버튼" width=100%></div>
+
+
+    <!-- 스티키 -->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("sti");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
