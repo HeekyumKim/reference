@@ -760,6 +760,99 @@
 /* //container */
 
 
+/* admin */
+.wrap_user {
+    position: relative;
+    display: block;
+    border-top: 2px solid #666;
+    padding-top: 12px;
+}
+
+.wrap_user ul.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.wrap_user ul.row:last-child {
+    margin-bottom: 0px;
+}
+
+.wrap_user ul.row li.box_user {
+    position: relative;
+    display: block;
+    width: 277px;
+    height: 145px;
+    padding: 19px 18px 50px 18px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+.wrap_user ul.row li.box_user:last-child {
+    margin-right: 0px;
+}
+
+.wrap_user ul.row li.box_user ul li {
+    display: block;
+    color: #000;
+    font-size: 13px;
+    line-height: 1;
+    opacity: 0.4;
+    padding-left: 85px;
+}
+
+.wrap_user ul.row li.box_user ul li.name {
+    height: 20px;
+    font-size: 15px;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+.wrap_user ul.row li.box_user ul li:last-child {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+
+.wrap_user ul.row li.box_user ul li em {
+    font-size: 18px;
+    font-family: NotoS_B;
+    line-height: 1;
+}
+
+.wrap_user ul.row li.box_user ul span {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #DADADA;
+}
+
+.wrap_user ul.row li.box_user ul span::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 25px;
+    top: 22px;
+    left: 18px;
+    background: url(../images/img_profile_dim.png) left top no-repeat;
+}
+
+.wrap_user ul.row li.box_user ul span img {
+    position: absolute;
+    width: 68px;
+    height: auto;
+    z-index: 10;
+}
+
+
+
+
+/* //admin */
+
+
 /* footer */
 .footer {
     position: relative;

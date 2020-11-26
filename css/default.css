@@ -44,7 +44,7 @@ input:-ms-clear{display:none}
 input::-webkit-input-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
 input::-moz-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
 input:-ms-input-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
-input[type=text]:disabled {background: #eeeeee; color:#B5B5B5}
+input[type=text]:disabled {background: #eeeeee; color:#B5B5B5 !important}
 
 textarea::-webkit-input-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
 textarea::-moz-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}

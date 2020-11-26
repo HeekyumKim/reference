@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>레퍼런스사이트</title>
+
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css">
+
+    <!-- 스크립트 -->
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <!-- <script  type="text/javascript" src="./js/jquery-1.11.2.min.js"></script> -->
+    <script type="text/javascript" src="./js/moment.min.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+
+            $('#date').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
+
+            $('#date').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                    'YYYY/MM/DD'));
+            });
+
+            $('#date').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- u_skip -->
+    <div id="u_skip">
+        <a href="#container">본문 바로가기</a></li>
+    </div>
+    <!-- //u_skip -->
+
+    <div id="wrap">
+        <!-- header -->
+        <div class="header_wrap">
+            <div class="header">
+                <div class="gnb_group">
+                    <h1>
+                        <a href="#"><span class="blind">네오넥스소프트</span></a>
+                    </h1>
+
+                    <div class="gnbArea">
+                        <div class="subnav">
+                            <button class="subnavbtn">레퍼런스</button>
+                            <div class="subnav_content">
+                                <a href="#">ICT 사업본부</a>
+                                <a href="#">솔루션사업본부</a>
+                            </div>
+                        </div>
+
+                        <div class="subnav">
+                            <button class="subnavbtn">관리자메뉴</button>
+                            <div class="subnav_content">
+                                <a href="#">이력관리</a>
+                                <a href="#">사용자관리</a>
+                                <a href="#">권한관리</a>
+                                <a href="#">공통코드 관리</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login_area">
+                    <span class="regis"><a href="#">프로젝트 등록</a></span>
+                    <span class="user_info">홍길동</span>
+                    <span class="login"><a href="#">로그아웃</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- //header -->
+
+        <!-- sticky -->
+        <div class="sta_wrap" id="sti">
+            <!-- page_tit s-->
+            <div class="sta_tit_wrap">
+                <div class="sta_tit">
+                    <h1 class="admin">권한관리</h1>
+                    <div class="btn_area">
+                        <button type="button" class="btn col_black">저장</button>
+                        <button type="button" class="btn ">취소</button>
+                    </div>
+                </div>
+            </div>
+            <!-- page_tit e-->
+
+            <!-- snbTab s-->
+            <div class="snbTab_wrap">
+                <div class="snb_wrap">
+                    <ul>
+                        <li class="snbtit"><a href="#"><span class="blind">화살표</span>이력관리</a></li>
+                        <li class="snbtit"><a href="#"><span class="blind">화살표</span>사용자관리</a></li>
+                        <li class="snbtit"><a href="#" class="active"><span class="blind">화살표</span>권한관리</a></li>
+                        <li class="snbtit"><a href="#"><span class="blind">화살표</span>공통코드관리</a></li>
+                    </ul>
+                </div>
+                <!-- //snb -->
+            </div>
+            <!-- snbTab e-->
+        </div>
+        <!-- //sticky -->
+
+        <!-- container -->
+        <div id="container">
+
+            <!-- content_wrap S-->
+            <div class="content_wrap">
+                <!-- listWrap -->
+                <div class="listWrap admin">
+
+                    <!-- content s-->
+                    <div class="content_list">
+                        <!-- form -->
+                        <div class="form_groupRow">
+                            <div class="form_group admin">
+                                <label class="control_label">권한명</label>
+                                <input type="text" name="" value="ICT 관리자" placeholder="권한명을 입력하세요" class="form_control2 w210">
+                            </div>
+                            <div class="form_group admin">
+                                <label class="control_label">사용여부</label>
+                                <div class="rc_wrap admin w210">
+                                    <div class="radio_default admin">
+                                        <input type="radio" id="radio01" name="radio" value="" checked />
+                                        <label for="radio01">사용</label>
+                                    </div>
+                                    <div class="radio_default admin">
+                                        <input type="radio" id="radio02" name="radio" value="" />
+                                        <label for="radio02">미사용</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group admin">
+                                <label class="control_label">최종 수정일</label>
+                                <input type="text" name="" value="2020-10-30 10:00:00" placeholder="" class="form_control2 w210" disabled>
+                            </div>
+                        </div>
+                        <!-- //form -->
+                        <!-- table list -->
+                        <div class="tbl_wrap_list mgt15">
+                            <table class="tbl_list" summary="테이블 입니다. 항목으로는 등이 있습니다">
+                                <caption>테이블</caption>
+                                <colgroup>
+                                    <col width="250px" />
+                                    <col width="" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">메뉴명</th>
+                                        <th scope="col">기능권한</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox1" checked="checked" />
+                                                <label for="checkbox1">레퍼런스 ICT</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox1-1" checked="checked" />
+                                                <label for="checkbox1-1">열람</label>
+                                            </div>
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox1-2" checked="checked" />
+                                                <label for="checkbox1-2">다운로드</label>
+                                            </div>
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox1-3" checked="checked" />
+                                                <label for="checkbox1-3">등록/수정</label>
+                                            </div>
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox1-4" checked="checked" />
+                                                <label for="checkbox1-4">삭제</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox2" />
+                                                <label for="checkbox2">레퍼런스 CTI</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check_default disabled admin">
+                                                <input type="checkbox" id="checkbox2-1" disabled />
+                                                <label for="checkbox2-1">열람</label>
+                                            </div>
+                                            <div class="check_default disabled admin">
+                                                <input type="checkbox" id="checkbox2-2" disabled />
+                                                <label for="checkbox2-2">다운로드</label>
+                                            </div>
+                                            <div class="check_default disabled admin">
+                                                <input type="checkbox" id="checkbox2-3" disabled />
+                                                <label for="checkbox2-3">등록/수정</label>
+                                            </div>
+                                            <div class="check_default disabled admin">
+                                                <input type="checkbox" id="checkbox2-4" disabled />
+                                                <label for="checkbox2-4">삭제</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox3" />
+                                                <label for="checkbox3">관리자 메뉴</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="check_default disabled admin">
+                                                <input type="checkbox" id="checkbox3-1" disabled />
+                                                <label for="checkbox3-1">사용</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table list -->
+
+                    </div>
+                    <!-- content e -->
+
+                </div>
+                <!-- //listWrap -->
+
+            </div>
+            <!-- content_wrap E-->
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <div class="footer">
+            Copyright 2020 . NEONEXSoft Inc. All Rights Reserved.
+        </div>
+        <!-- //footer -->
+    </div>
+
+    <div id="topBtn"><img src="./images/top.png" alt="top버튼" width=100%></div>
+
+
+    <!-- 스티키 -->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("sti");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
