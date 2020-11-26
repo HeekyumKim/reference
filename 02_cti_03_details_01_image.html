@@ -16,7 +16,7 @@
 
  </head> 
 
-<body>
+<body>     
    <!-- u_skip -->
    <div id="u_skip">
       <a href="#container">본문 바로가기</a></li>
@@ -64,35 +64,103 @@
    
       <!-- sticky -->
       <div class="sta_wrap" id="sti">
-         <!-- 검색영역 s -->
-         <div class="seach_wrap">
-            <div class="search">
-               <input type="text" title="검색어 입력" placeholder="레퍼런스를 검색하세요.(프로젝트명, #키워드 등)" id="schinput" class="input_sch">
-               <span id="schclear">
-                  <span class="blind">삭제</span>
-               </span>
-   
-               <button type="submit" title="검색" class="btn_submit">
-                  <span class="blind">검색</span>
-               </button>
+        
+            <!-- view_tit s-->
+            <div class="view_tit_wrap">
+               <div class="view_tit">
+                  <h1 class="viewTitle">국세청 보이는 ARS구축 v0.5</h1>
+               <div class="updown">SKB MSP와 SKT Thing Plug 연동정보를 통해 목적물(Vehicle, 이동자산) 또는 대인에 대한 위치 및 이동경로등을 GPS, LoRa를 이용수집하여...<span>펼침</span></div>
+               <div class="keyword">
+                  <span class="txt">#IoT</span>
+                  <span class="txt">#롯데렌탈</span>
+                  <span class="txt">#관제</span>
+                  <span class="txt">#주차주차주차주차</span>
+                  <span class="txt">#IoT</span>
+                  <span class="txt">#롯데렌탈</span>
+                  <span class="txt">#롯데렌탈롯데렌탈</span>
+                  <span class="txt">#IoT</span>
+                  <span class="txt">#IoT</span>
+                  <span class="txt">#IoT</span>
+                  <span class="txt">#롯데렌탈</span>
+                  <span class="txt">#관제</span>
+                  <span class="txt">#주차주차주차주차</span>
+                  <span class="txt">#IoT</span>
+                  <span class="txt">#롯데렌탈</span>                
+               </div>
+
+               <div class="clientDate">
+                  <span>네오넥스소프트</span>
+                  <span>홍길동부장/김태호차장</span>
+                  <span>2020-10-01</span>
+               </div>
+               <p class="issue">준비 되지 않은 고객으로 인하여 프로젝트 일정이 조절이 안되어 2개월의 추가일정 발생</p>
+               
+                <div class="btn_area">
+                     <button type="button" class="btn col_black">목록</button>
+                     <button type="button" class="btn ">수정</button>
+                     <button type="button" class="btn ">삭제</button>
+                     <button type="button" class="btn ">이력</button>
+                  </div>
+               </div>
             </div>
-         </div>
-         <!-- 검색영역 e -->
+            <!-- view_tit s-->
+       
    
          <!-- snbTab s-->
          <div class="snbTab_wrap">
             <div class="snb_wrap">
                <ul>
-                  <li class="snbtit"><a href="#" class="active"><span class="blind">화살표</span>ICT사업본부</a></li>
-                  <li class="snbtit"><a href="#"><span class="blind">화살표</span>솔루션사업본부</a></li>
+                  <li class="snbtit"><a href="#" class=""><span class="blind">화살표</span>ICT사업본부</a></li>
+                  <li class="snbtit"><a href="#" class="active"><span class="blind">화살표</span>솔루션사업본부</a></li>
                </ul>
             </div>
             <!-- //snb -->
-   
+
             <div class="tab_menu_wrap">
-               <div class="tab_menu">
-                  <button class="tablinks" onclick="openCity(event, 'Consol')" id="defaultOpen">통합</button>
-                  <button class="tablinks" onclick="openCity(event, 'Img')">이미지</button>
+               <div class="menuTree_wrap">
+                  <div class="menuTree">
+                     <div class="tree_boxTop">
+                        <div class="treeTitle fl">국세청 보이는 ARS 구축</div>
+                        <div class="tree_icon fr">
+                           <button type="button" class="icon_add"><span class="blind">추가</span></button>
+                           <button type="button" class="icon_del"><span class="blind">삭제</span></button>
+                           <button type="button" class="icon_modi"><span class="blind">수정</span></button>
+                        </div>
+                     </div>
+                     <div class="treeDep_wrap">
+                        <ul>
+                           <li class="active"><a href="#">하위 프로젝트 1</a></li>
+                           <li><a href="#">하위 프로젝트 2</a></li>
+                           <li><a href="#">하위 프로젝트 3</a></li>
+                           <li><a href="#">하위 프로젝트 4</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="menuTree">
+                     <div class="tree_boxTop">
+                        <div class="tree_icon fr">
+                           <button type="button" class="icon_add"><span class="blind">추가</span></button>
+                           <button type="button" class="icon_del"><span class="blind">삭제</span></button>
+                           <button type="button" class="icon_modi"><span class="blind">수정</span></button>
+                        </div>
+                     </div>
+                     <div class="treeDep_wrap">
+                        <ul>
+                           <li class=""><a href="#">하위 프로젝트 1</a></li>
+                           <li><a href="#">하위 프로젝트 2</a></li>
+                           <li class="active"><a href="#">하위 프로젝트 3</a></li>
+                           <li><a href="#">하위 프로젝트 4</a></li>
+                           <li><a href="#">하위 프로젝트 5</a></li>
+                           <li><a href="#">하위 프로젝트 6</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- //tree -->          
+
+               <div class="tab_menu mgt13">
+                  <button class="tablinks" onclick="openCity(event, 'Consol')" id="defaultOpen">이미지</button>
+                  <button class="tablinks" onclick="openCity(event, 'Img')">파일</button>
                </div>
             </div>
             <!-- //탭메뉴  -->
@@ -105,14 +173,21 @@
       <div id="container">
    
          <!-- content_wrap S-->
-         <div class="content_wrap">
+         <div class="content_wrap"> 
             <div class="listWrap">
-   
                <!-- content s-->
                <div class="content_list">
                   <!-- tabMenu content s -->
                   <div class="tab_cont_wrap">
                      <div class="tab_content" id="Consol">
+
+                        <div class="imgdown_wrap">
+                           <button type="button" class="active">전체 다운로드</button>
+                           <span></span>
+                           <button type="button">선택 다운로드</button>
+                        </div>
+
+
                         <ul>
                            <li class="listBox">
                               <div class="box_left">

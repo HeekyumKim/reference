@@ -52,6 +52,9 @@
 .w290 {
     width: 290px !important;
 }
+.w934 {
+    width: 934px !important;
+}
 
 
 /* Margin */
@@ -64,7 +67,9 @@
 .mgt10 {
     margin-top: 10px
 }
-
+.mgt13 {
+    margin-top: 13px
+}
 .mgt15 {
     margin-top: 15px
 }
@@ -75,6 +80,10 @@
 
 .mgt27 {
     margin-top: 27px !important
+}
+
+.mgt45 {
+    margin-top: 45px !important
 }
 
 /* *오른쪽* */
@@ -116,7 +125,6 @@
 /* Padding */
 
 /* *위* */
-
 
 /* *오른쪽* */
 
@@ -240,6 +248,13 @@ textarea {
     outline-color: #2782CE;
 }
 
+.form_group .form_control.error {
+    border: 1px solid #B00020;
+    border-radius: 4px;
+    color:#B00020;
+    outline-color: #B00020 ;   
+}
+
 .form_group .text_control {
     width: 100%;
     padding: 10px 17px;
@@ -288,6 +303,14 @@ textarea {
     outline-color: #2782CE;
     color: #282828;
 }
+
+.sec_line{
+    width:1200px;
+    height: 1px;   
+    margin-top:32px;
+    margin-bottom:32px;
+    background-color: #666666;
+  }
 
 /* 라디오,체크 */
 .rc_wrap {
@@ -468,8 +491,6 @@ input[type="checkbox"] {
     background-color: rgba(102, 102, 102, .25);
 }
 
-
-/* 셀렉트 박스*/
 
 /* 셀렉트 박스*/
 select {
