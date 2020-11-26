@@ -312,8 +312,50 @@
     text-align: left;
     color: #282828;
 }
-
 /* = page_tit e = */
+
+/* = view_tit s = */
+.view_tit_wrap {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 112px;
+    background: #F5F5F5 url("../images/sear_bg.png") repeat-x;
+}
+
+.view_tit_wrap .view_tit {
+    position: relative;
+    width: 1400px;
+    padding-top:24px;
+    margin: 0 auto;
+}
+
+.view_tit h1.viewTitle {
+    font-family: 'NotoS_M';
+    font-size: 34px;
+    text-align: left;
+    color: #282828;
+}
+
+.listBox .box_left .keyword {
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+    height: 27px;
+}
+
+.listBox .box_left .keyword .txt {
+    display: inline-block;
+    height: 27px;
+    padding: 0 16px;
+    margin-right: 6px;
+    border-radius: 27px;
+    background-color: #F5F5F5;
+    font-size: 15px;
+    line-height: 24px;
+}
+/* = view_tit e = */
+
 
 /* = snbTab s = */
 .snbTab_wrap {

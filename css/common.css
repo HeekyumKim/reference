@@ -44,9 +44,11 @@
 .w100 {
     width: 100% !important;
 }
-
 .w290 {
     width: 290px !important;
+}
+.w934 {
+    width: 934px !important;
 }
 
 
@@ -55,6 +57,9 @@
 /* *위* */
 .mgt10 {
     margin-top: 10px
+}
+.mgt45 {
+    margin-top: 45px !important
 }
 
 .mgt15 {
@@ -79,6 +84,9 @@
 }
 
 /* *아래* */
+.mgb0 {
+    margin-bottom: 0px !important
+}
 .mgb9 {
     margin-bottom: 9px !important
 }
@@ -189,10 +197,12 @@ textarea {
     display: -ms-flexbox;
     display: flex;
 }
-
+.form_groupRow.col_6>.form_group {
+    width: 594px;
+} 
 .form_groupRow>.form_group {
     width: 392px;
-    margin-right: 10px;
+    margin-right: 12px;
     margin-bottom: 21px;
 }
 
@@ -231,6 +241,13 @@ textarea {
     line-height: 1;
     outline-color: #2782CE;
 }
+.form_group .form_control.error {
+    color:#B00020;
+    outline-color: #B00020 ;
+    border: 1px solid #B00020;
+    border-radius: 4px;
+}
+
 
 .form_group .text_control {
     width: 100%;
@@ -267,6 +284,17 @@ textarea {
     line-height: 1;
     outline-color: #2782CE;
     color: #282828;
+}
+
+.sec_line{
+  width:1200px;
+  height: 1px;
+  background-color: #666666;
+  margin-top:32px;
+  margin-bottom:32px;
+
+
+
 }
 
 /* 라디오,체크 */
@@ -456,14 +484,16 @@ select::-ms-expand {
     height: 46px;
     padding: 10px 17px;
     border: none;
-    outline: none;
+    outline-color: #2782CE;
     background: transparent;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none;    
     /* 화살표 보여지는 부분*/
 }
+
+
 
 
 /* table */

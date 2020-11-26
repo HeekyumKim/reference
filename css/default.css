@@ -50,7 +50,11 @@ textarea::-webkit-input-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
 textarea::-moz-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
 textarea:-ms-input-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
 
-textarea {vertical-align:middle; resize:none /*none:조절불가, both:가로/세로 조절 가능, horizontal:가로 조절만 가능, vertical:세로조절만 가능*/}
+textarea {vertical-align:middle; overflow-y: auto; resize:none /*none:조절불가, both:가로/세로 조절 가능, horizontal:가로 조절만 가능, vertical:세로조절만 가능*/}
+
+/* input 포커스 색상 */
+
+
 
 
 /* ie 검색어 삭제 버튼 안보이기 */

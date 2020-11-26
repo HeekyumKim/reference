@@ -21,24 +21,29 @@
 
     <script>
         $(function () {
+                $('.dateto').daterangepicker({
+                    autoUpdateInput: false,
+                    locale: {
+                        monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+                        daysOfWeek: ["월", "화", "수", "목", "금", "토", "일"],
+                        format: "YYYY-MM-DD",
+                        cancelLabel: '취소',
+                        applyLabel: "확인",
+                        showMonthAfterYear: false,
+                        yearSuffix: '년',
+                    }
+                });
 
-            $('#date').daterangepicker({
-                autoUpdateInput: false,
-                locale: {
-                    cancelLabel: 'Clear'
-                }
+                $('.dateto').on('apply.daterangepicker', function (ev, picker) {
+                    $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                        'YYYY/MM/DD'));
+                });
+
+                $('.dateto').on('cancel.daterangepicker', function (ev, picker) {
+                    $(this).val('');
+                });
+
             });
-
-            $('#date').on('apply.daterangepicker', function (ev, picker) {
-                $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
-                    'YYYY/MM/DD'));
-            });
-
-            $('#date').on('cancel.daterangepicker', function (ev, picker) {
-                $(this).val('');
-            });
-
-        });
     </script>
 
 </head>
@@ -128,8 +133,8 @@
                         <!-- form -->
                         <div class="form_groupRow">
                             <div class="form_group admin datepicker">
-                                <input type="text" name="" value="" size="40" placeholder="기간을 선택하세요" id="date"
-                                    class="form_control w290">
+                                <input type="text" name="" value="" size="40" placeholder="기간을 선택하세요" 
+                                    class="form_control w290 dateto">
                             </div>
                             <div class="form_group admin search">
                                 <input type="text" name="" value="" placeholder="검색어를 입력하세요" class="form_control w290">
