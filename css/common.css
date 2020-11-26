@@ -45,6 +45,10 @@
     width: 100% !important;
 }
 
+.w210 {
+    width: 210px !important;
+}
+
 .w290 {
     width: 290px !important;
 }
@@ -53,6 +57,10 @@
 /* Margin */
 
 /* *위* */
+.mgt5 {
+    margin-top: 5px
+}
+
 .mgt10 {
     margin-top: 10px
 }
@@ -269,6 +277,18 @@ textarea {
     color: #282828;
 }
 
+.form_group.admin .form_control2 {
+    width: 100%;
+    padding: 5px 17px;
+    height: 32px;
+    border: 1px solid #DADADA;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1;
+    outline-color: #2782CE;
+    color: #282828;
+}
+
 /* 라디오,체크 */
 .rc_wrap {
     position: relative;
@@ -278,6 +298,11 @@ textarea {
     border: 1px solid #dadada;
     border-radius: 4px;
     background-color: #fff;
+}
+
+.rc_wrap.admin {
+    height: 32px;
+    padding: 2px 17px;
 }
 
 input[type="radio"],
@@ -326,6 +351,18 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+.radio_default.admin label {
+    display: inline-block;
+    height: 16px;
+    padding-left: 25px;
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1;
+    background: url("../images/radio.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
 .check_default label {
     display: inline-block;
     padding-left: 25px;
@@ -336,6 +373,31 @@ input[type="checkbox"] {
     background: url("../images/checkbox.png") no-repeat 0 0;
     vertical-align: middle;
     cursor: pointer;
+}
+
+.check_default.admin label {
+    display: inline-block;
+    padding-left: 25px;
+    height: 17px;
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 1;
+    background: url("../images/checkbox.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.check_default.disabled.admin label {
+    display: inline-block;
+    padding-left: 25px;
+    height: 17px;
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 1;
+    background: url("../images/checkbox_disabled.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #7b7b7b;
 }
 
 .radio_default input[type="radio"]:checked+label {
@@ -371,6 +433,7 @@ input[type="checkbox"] {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .col_black {
@@ -427,7 +490,6 @@ select::-ms-expand {
     /* 화살표 없애기 for IE10,11*/
 }
 
-
 .select_box {
     position: relative;
     width: 254px;
@@ -435,9 +497,7 @@ select::-ms-expand {
     margin-right: 12px;
     border: 1px solid #dadada;
     border-radius: 4px;
-
 }
-
 
 .select_box::before {
     content: '';
@@ -449,12 +509,56 @@ select::-ms-expand {
     background: url("../images/select_arrow.png") center no-repeat;
 }
 
-
 .select_box select.view_select {
     position: relative;
     width: 254px;
     height: 46px;
     padding: 10px 17px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* 화살표 보여지는 부분*/
+}
+
+.select_box.admin {
+    position: absolute;
+    width: 100%;
+    height: 31px;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #dadada;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0px;
+    font-size: 16px !important;
+}
+
+.select_box.admin select {
+    font-size: 16px;
+    padding: 5px 17px;
+}
+
+.select_box.admin::before {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 14px;
+    height: 8px;
+    background: url("../images/select_arrow.png") center no-repeat;
+    background-size: 8px 5px;
+}
+
+.select_box.admin select.view_select {
+    position: relative;
+    width: 100%;
+    height: 31px;
+    padding: 5px 17px;
     border: none;
     outline: none;
     background: transparent;
@@ -500,7 +604,7 @@ select::-ms-expand {
 
 .tbl_wrap_list .tbl_list tbody td {
     position: relative;
-    padding: 18px 10px;
+    padding: 15px 10px 16px 10px;
     text-align: left;
     color: #282828;
     border-bottom: 1px solid #DADADA;
@@ -534,6 +638,13 @@ select::-ms-expand {
 
 .tbl_wrap_list .tbl_list tbody tr:nth-child(even) {
     background-color: #FAFAFB;
+}
+
+.tbl_wrap_list .tbl_list tbody tr.on,
+.tbl_wrap_list.odd .tbl_list tbody tr.on {
+    color: #222;
+    background: #ebf4fb;
+    cursor: pointer;
 }
 
 /* Pagination */
