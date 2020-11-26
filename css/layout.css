@@ -37,7 +37,7 @@
     justify-content: space-between;
     position: relative;
     width: 1400px;
-    height: 100px;
+    height: 82px;
     margin: 0 auto;
 }
 
@@ -46,20 +46,20 @@
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    height: 100px;
+    height: 82px;
 }
 
 .gnb_group>h1 {
     position: relative;
     width: 160px;
-    height: 100px;
+    height: 82px;
     margin-right: 36px;
 }
 
 .gnb_group>h1 a {
     display: inline-block;
     position: absolute;
-    top: 30px;
+    top: 28px;
     height: 20px;
     width: 100%;
     background: url("../images/logo.png") no-repeat 0 0;
@@ -69,7 +69,7 @@
     overflow: hidden;
     position: relative;
     width: 600px;
-    top: 29px
+    top: 24px
 }
 
 .gnbArea .subnav {
@@ -100,11 +100,10 @@
 
 .subnav_content a {
     float: left;
-    margin-top: 8px;
     margin-right: 24px;
     padding: 3px 0px;
     font-family: 'NotoS_L';
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: -1px;
     color: #fff;
 }
@@ -116,7 +115,7 @@
     height: 0;
     vertical-align: middle;
     border-style: solid;
-    border-width: 5px 7px 5px 7px;
+    border-width: 3px 5px 3px 5px;
     border-color: transparent transparent transparent #fff;
 }
 
@@ -130,7 +129,7 @@
 
 .login_area {
     position: relative;
-    top: 29px;
+    top: 27px;
     height: 20px;
 }
 
@@ -319,7 +318,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    min-height: 112px;
+    min-height: 112px;   
     background: #F5F5F5 url("../images/sear_bg.png") repeat-x;
 }
 
@@ -333,29 +332,166 @@
 .view_tit h1.viewTitle {
     font-family: 'NotoS_M';
     font-size: 34px;
+    line-height: 50px;
     text-align: left;
     color: #282828;
 }
-
-.listBox .box_left .keyword {
-    overflow: hidden;
+.view_tit .updown {
+    font-size:15px;
+    line-height: 1.2;
+}
+.view_tit_wrap .keyword {
     position: relative;
+    margin-top:8px; 
     font-size: 0;
-    height: 27px;
 }
 
-.listBox .box_left .keyword .txt {
+.view_tit_wrap .keyword .txt {
     display: inline-block;
     height: 27px;
     padding: 0 16px;
+    margin-bottom: 9px;
     margin-right: 6px;
-    border-radius: 27px;
-    background-color: #F5F5F5;
+    border-radius: 27px;   
+    background-color: #dadada;
     font-size: 15px;
     line-height: 24px;
 }
+
+.view_tit_wrap .clientDate{
+    overflow: hidden;
+    position: relative;
+}
+
+.view_tit_wrap .clientDate span {
+    display: block;
+    float: left;
+    position: relative;
+    height: 24px;
+    padding-left: 10px;
+    margin-right: 10px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #666;
+}
+
+.view_tit_wrap .clientDate span:first-child{
+   padding-left:0px
+}
+.view_tit_wrap .clientDate span:first-child::after{
+    display: none;
+}
+
+.view_tit_wrap .clientDate span:first-child::after{
+    display: none;
+}
+
+.view_tit_wrap .clientDate span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 10px;
+    margin-top: -5px;
+    background-color: #dadada;
+}
+
+
+.view_tit_wrap .issue {
+    font-size:13px;
+    margin: 6px 0 16px
+}
 /* = view_tit e = */
 
+
+/* == tree s == */
+.menuTree_wrap{
+    position: relative;
+    display: -webkit-box;    display: -ms-flexbox;    display: flex;
+    background-color: #fff;
+}
+.menuTree {
+    position: relative;
+    width:50%;
+    margin-top:29px
+}
+.menuTree .tree_boxTop {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.tree_boxTop .treeTitle {
+    font-family: 'NotoS_B';
+    font-size: 16px;
+}
+.tree_boxTop .tree_icon {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+}
+.tree_boxTop .tree_icon button {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.tree_boxTop .tree_icon button:last-child {
+    margin: 0;
+}
+.tree_boxTop .tree_icon button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+}
+.tree_boxTop .tree_icon .icon_add::after {
+    background: url("../images/tree_add.png") no-repeat center;
+}
+.tree_boxTop .tree_icon .icon_del::after {
+    background: url("../images/tree_minus.png") no-repeat center;
+}
+.tree_boxTop .tree_icon .icon_modi::after {
+    width: 16px;
+    height: 15px;
+    background: url("../images/tree_modi.png") no-repeat center;
+}
+
+.menuTree .treeDep_wrap {overflow-y: auto; position: relative; height:145px; border-top: 2px solid #282828; border: 1px solid #DADADA}
+.menuTree .treeDep_wrap ul li {
+    position: relative;
+    height: 36px;
+    width:100%;
+    padding-left:16px;
+    border-bottom: 1px solid #DADADA;
+}
+.menuTree .treeDep_wrap ul li a{
+    display: block;
+    font-size: 15px;
+    line-height: 36px;
+}
+
+.menuTree .treeDep_wrap ul li a::before{
+    display: inline-block;
+    content: '';
+    width: 10px; 
+    height: 10px; 
+    margin-right: 10px;
+    border-top: 3px solid rgba(118, 118, 118, 0.56);
+    border-right: 3px solid rgba(118, 118, 118, 0.56);
+    transform: rotate(45deg); 
+}
+.menuTree .treeDep_wrap ul li.active,
+.menuTree .treeDep_wrap ul li:active,
+.menuTree .treeDep_wrap ul li:hover{
+    background-color: rgba(39, 130, 206, 0.08);
+}
+
+/* == tree e == */
 
 /* = snbTab s = */
 .snbTab_wrap {
@@ -366,6 +502,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: #fff;
 }
 
 .snb_wrap {
@@ -512,12 +649,44 @@
     width: 1200px;
 }
 
+.tab_content .imgdown_wrap{
+   float: right;
+}
+
+.tab_content .imgdown_wrap > button {
+    padding: 0 7px 0 10px;
+    font-size: 13px;
+    line-height: 1.2;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+.tab_content .imgdown_wrap > button:first-child:after{
+    display: none;
+}
+.tab_content .imgdown_wrap > button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 10px;
+    margin-top: -5px;
+    background-color: #dadada;
+}
+
+.tab_content .imgdown_wrap > button.active,
+.tab_content .imgdown_wrap > button:focus
+{
+    color: #2782CE
+}
+
 .tab_content .listBox {
     display: flex;
     overflow: hidden;
     position: relative;
     width: 1200px;
-    height: 218px;
+    height: 200px;
     margin-bottom: 20px;
     border: 1px solid #DADADA;
 }
@@ -538,7 +707,7 @@
 }
 
 .listBox .box_left .tit_master {
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'NotoS_B';
 }
 
@@ -549,7 +718,7 @@
 
 .listBox .box_left .summary {
     margin: 8px 0 9px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -559,14 +728,14 @@
 
 .listBox .box_left .clientDate span {
     padding-right: 3px;
-    font-size: 16px;
+    font-size: 15px;
     color: rgba(40, 40, 40, .64)
 }
 
 .listBox .box_left .clientDate .i_calen {
     padding-left: 18px;
     line-height: 24px;
-    background: url("../images/icon_calendar.png") no-repeat 0 5px;
+    background: url("../images/icon_calendar.png") no-repeat 0 3px;
 }
 
 .listBox .box_left .keyword {
@@ -581,6 +750,7 @@
     height: 27px;
     padding: 0 16px;
     margin-right: 6px;
+    margin-bottom: 9px;
     border-radius: 27px;
     background-color: #F5F5F5;
     font-size: 15px;
