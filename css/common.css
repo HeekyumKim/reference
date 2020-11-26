@@ -499,12 +499,12 @@ select::-ms-expand {
 }
 
 .tbl_wrap_list .tbl_list tbody td {
-    height: 28px;
     position: relative;
     padding: 18px 10px;
     text-align: left;
     color: #282828;
     border-bottom: 1px solid #DADADA;
+    font-size: 15px;
 }
 
 .tbl_wrap_list .tbl_list tbody td:first-child {
@@ -517,11 +517,8 @@ select::-ms-expand {
 }
 
 .tbl_wrap_list .tbl_list tbody td.nodata {
-    height: 140px;
-    background-color: #fff;
+    height: 230px;
     text-align: center;
-    color: #212529;
-    font-size: 13px;
 }
 
 .tbl_wrap_list .tbl_list tbody td span {
@@ -555,6 +552,11 @@ select::-ms-expand {
     height: 34px;
     border: 1px solid #DADADA;
     vertical-align: middle;
+    margin-right: 3px;
+}
+
+.pagination a:last-child {
+    margin-right: 0px;
 }
 
 .pagination a:hover {
@@ -594,7 +596,7 @@ select::-ms-expand {
 
 .pagination .wrap {
     display: inline-block;
-    margin: 0 7px;
+    margin: 0 18px;
 }
 
 .pagination .wrap a {
@@ -614,17 +616,6 @@ select::-ms-expand {
 
 .pagination .wrap a.on {
     border-color: #666;
-}
-
-.pagination img {
-    margin: 0 4px;
-    vertical-align: middle;
-}
-
-.pagination .btn_right {
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 /* //Pagination */

@@ -10,11 +10,36 @@
     <!-- 스타일 시트 -->
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/layout.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css">
 
     <!-- 스크립트 -->
     <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <!-- <script  type="text/javascript" src="./js/jquery-1.11.2.min.js"></script> -->
+    <script type="text/javascript" src="./js/moment.min.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+
+    <script>
+        $(function () {
+
+            $('#date').daterangepicker({
+                autoUpdateInput: false,
+                locale: {
+                    cancelLabel: 'Clear'
+                }
+            });
+
+            $('#date').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                    'YYYY/MM/DD'));
+            });
+
+            $('#date').on('cancel.daterangepicker', function (ev, picker) {
+                $(this).val('');
+            });
+
+        });
+    </script>
 
 </head>
 
@@ -93,26 +118,130 @@
         <!-- container -->
         <div id="container">
 
-
             <!-- content_wrap S-->
             <div class="content_wrap">
-                <div class="listWrap">
+                <!-- listWrap -->
+                <div class="listWrap admin">
 
                     <!-- content s-->
-                    <div class="content_list" style="height: 2000px;">
-                        
+                    <div class="content_list">
+                        <!-- form -->
+                        <div class="form_groupRow">
+                            <div class="form_group admin datepicker">
+                                <input type="text" name="" value="" size="40" placeholder="기간을 선택하세요" id="date"
+                                    class="form_control w290">
+                            </div>
+                            <div class="form_group admin search">
+                                <input type="text" name="" value="" placeholder="검색어를 입력하세요" class="form_control w290">
+                                <button type="submit" title="검색">
+                                    <span class="blind">검색</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //form -->
+                        <!-- table list -->
+                        <div class="tbl_wrap_list mgt15">
+                            <table class="tbl_list" summary="테이블 입니다. 항목으로는 등이 있습니다">
+                                <caption>테이블</caption>
+                                <colgroup>
+                                    <col width="" />
+                                    <col width="200px" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">이력</th>
+                                        <th scope="col">다운로드일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ICT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 <span>파일 다운로드</span> 하였습니다.
+                                            <p>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </p>
+                                        </td>
+                                        <td>2020-10-30 12:25:30</td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td colspan="2" class="nodata">등록된 데이터가 없습니다.</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //table list -->
+                        <!-- Pagination -->
+                        <div class="pagination mgt27">
+                            <a class="btn_first off" href="#"></a>
+                            <a class="btn_prev off" href="#"></a>
+                            <span class='wrap'>
+                                <a href='#' class='on'>1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </span>
+                            <a class="btn_next" href="#"></a>
+                            <a class="btn_last" href="#"></a>
+                        </div>
+                        <!-- //Pagination -->
+
                     </div>
                     <!-- content e -->
 
-
-
                 </div>
-
-
-
-
-
-
+                <!-- //listWrap -->
 
             </div>
             <!-- content_wrap E-->
@@ -148,9 +277,6 @@
         }
     </script>
 
-
-
 </body>
-
 
 </html>
