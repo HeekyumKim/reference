@@ -5,48 +5,48 @@
 
 /* display */
 .dflex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex !important;
 }
 
 .dfb {
-  display: block;
+    display: block;
 }
 
 /* float */
 .fl {
-  float: left
+    float: left
 }
 
 .fr {
-  float: right
+    float: right
 }
 
 /* positon */
 .fixed {
-  position: fixed !important
+    position: fixed !important
 }
 
 /* overflow, clear */
 .ofh {
-  overflow: hidden !important;
+    overflow: hidden !important;
 }
 
 .clear::after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
 
 /* width */
 .w100 {
-  width: 100% !important;
+    width: 100% !important;
 }
 
 .w290 {
-  width: 290px !important;
+    width: 290px !important;
 }
 
 
@@ -54,54 +54,54 @@
 
 /* *위* */
 .mgt10 {
-  margin-top: 10px
+    margin-top: 10px
 }
 
 .mgt15 {
-  margin-top: 15px
+    margin-top: 15px
 }
 
 .mgt25 {
-  margin-top: 25px !important
+    margin-top: 25px !important
 }
 
 .mgt27 {
-  margin-top: 27px !important
+    margin-top: 27px !important
 }
 
 /* *오른쪽* */
 .mgr6 {
-  margin-right: 6px !important
+    margin-right: 6px !important
 }
 
 .mgr10 {
-  margin-right: 10px
+    margin-right: 10px
 }
 
 /* *아래* */
 .mgb9 {
-  margin-bottom: 9px !important
+    margin-bottom: 9px !important
 }
 
 .mgb10 {
-  margin-bottom: 10px !important
+    margin-bottom: 10px !important
 }
 
 .mgb32 {
-  margin-bottom: 32px !important
+    margin-bottom: 32px !important
 }
 
 /* *왼쪽* */
 .mgl9 {
-  margin-left: 9px
+    margin-left: 9px
 }
 
 .mgl10 {
-  margin-left: 10px
+    margin-left: 10px
 }
 
 .mgl20 {
-  margin-left: 20px
+    margin-left: 20px
 }
 
 
@@ -119,290 +119,290 @@
 
 /* Text-align */
 .tal {
-  text-align: left !important
+    text-align: left !important
 }
 
 .tar {
-  text-align: right !important
+    text-align: right !important
 }
 
 .tac {
-  text-align: center !important
+    text-align: center !important
 }
 
 /* Vertical-align */
 .vam {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 .vat {
-  vertical-align: top;
+    vertical-align: top;
 }
 
 .vab {
-  vertical-align: bottom
+    vertical-align: bottom
 }
 
 /* Border */
 .bl0 {
-  border-left: 0px !important
+    border-left: 0px !important
 }
 
 .br0 {
-  border-right: 0px !important
+    border-right: 0px !important
 }
 
 .bt0 {
-  border-top: 0px !important
+    border-top: 0px !important
 }
 
 .bb0 {
-  border-bottom: 0px !important
+    border-bottom: 0px !important
 }
 
 
 /* common */
 .blind {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 
 /* form */
 input[type="text"],
 input[type="password"],
 textarea {
-  display: inline-block;
-  width: auto;
-  padding: 12px;
-  background-color: #fff;
-  border: 1px solid #dadada;
-  font-size: 15px;
+    display: inline-block;
+    width: auto;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    font-size: 15px;
 }
 
 .form_groupRow {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .form_groupRow>.form_group {
-  width: 392px;
-  margin-right: 10px;
-  margin-bottom: 21px;
+    width: 392px;
+    margin-right: 10px;
+    margin-bottom: 21px;
 }
 
 .form_groupRow>.form_group.admin {
-  width: auto;
-  margin-right: 12px;
-  margin-bottom: 0px;
+    width: auto;
+    margin-right: 12px;
+    margin-bottom: 0px;
 }
 
 .form_groupRow>.form_group:last-child {
-  margin-right: 0px;
+    margin-right: 0px;
 }
 
 .form_group {
-  position: relative;
-  width: 100%;
-  margin-bottom: 21px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 21px;
 }
 
 .form_group .control_label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 13px;
-  font-family: 'NotoS_B';
-  color: #282828;
-  line-height: 1;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-family: 'NotoS_B';
+    color: #282828;
+    line-height: 1;
 }
 
 .form_group .form_control {
-  width: 100%;
-  padding: 10px 17px;
-  height: 46px;
-  border: 1px solid #dadada;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1;
-  outline-color: #2782CE;
+    width: 100%;
+    padding: 10px 17px;
+    height: 46px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1;
+    outline-color: #2782CE;
 }
 
 .form_group .text_control {
-  width: 100%;
-  padding: 10px 17px;
-  height: 138px;
-  border: 1px solid #dadada;
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 1.2;
-  outline-color: #2782CE;
+    width: 100%;
+    padding: 10px 17px;
+    height: 138px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1.2;
+    outline-color: #2782CE;
 }
 
 .form_group.admin.datepicker input {
-  background: url(../images/icon_calendar_admin.png) right 3px no-repeat;
+    background: url(../images/icon_calendar_admin.png) right 3px no-repeat;
 }
 
 .form_group.admin.search button {
-  position: absolute;
-  display: block;
-  width: 21px;
-  height: 21px;
-  top: 5px;
-  right: 11px;
-  background: url(../images/icon_search_admin.png) left top no-repeat;
+    position: absolute;
+    display: block;
+    width: 21px;
+    height: 21px;
+    top: 5px;
+    right: 11px;
+    background: url(../images/icon_search_admin.png) left top no-repeat;
 }
 
 .form_group.admin .form_control {
-  width: 100%;
-  padding: 5px 17px;
-  height: 32px;
-  border: 1px solid #666;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1;
-  outline-color: #2782CE;
-  color: #282828;
+    width: 100%;
+    padding: 5px 17px;
+    height: 32px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1;
+    outline-color: #2782CE;
+    color: #282828;
 }
 
 /* 라디오,체크 */
 .rc_wrap {
-  position: relative;
-  width: 100%;
-  height: 46px;
-  padding: 10px 17px;
-  border: 1px solid #dadada;
-  border-radius: 4px;
-  background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 46px;
+    padding: 10px 17px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  overflow: hidden;
-  display: none;
-  width: 0px;
-  height: 0px;
-  border: 0 none;
-  font-size: 0;
-  line-height: 0;
-  clip: rect(0 0 0 0);
-  opacity: 0;
+    overflow: hidden;
+    display: none;
+    width: 0px;
+    height: 0px;
+    border: 0 none;
+    font-size: 0;
+    line-height: 0;
+    clip: rect(0 0 0 0);
+    opacity: 0;
 }
 
 .check_default,
 .radio_default {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .radio_default input[type="radio"],
 .check_default input[type="checkbox"] {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 0 none;
-  margin: 0;
-  visibility: hidden;
-  clip: rect(0 0 0 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0 none;
+    margin: 0;
+    visibility: hidden;
+    clip: rect(0 0 0 0);
 }
 
 .radio_default label {
-  display: inline-block;
-  height: 16px;
-  padding-left: 25px;
-  margin-top: 4px;
-  font-size: 18px;
-  line-height: 1;
-  background: url("../images/radio.png") no-repeat 0 0;
-  vertical-align: middle;
-  cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    padding-left: 25px;
+    margin-top: 4px;
+    font-size: 18px;
+    line-height: 1;
+    background: url("../images/radio.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 .check_default label {
-  display: inline-block;
-  padding-left: 25px;
-  height: 17px;
-  margin-top: 4px;
-  font-size: 18px;
-  line-height: 1;
-  background: url("../images/checkbox.png") no-repeat 0 0;
-  vertical-align: middle;
-  cursor: pointer;
+    display: inline-block;
+    padding-left: 25px;
+    height: 17px;
+    margin-top: 4px;
+    font-size: 18px;
+    line-height: 1;
+    background: url("../images/checkbox.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 .radio_default input[type="radio"]:checked+label {
-  background-position: 0 -16px;
+    background-position: 0 -16px;
 }
 
 .check_default input[type="checkbox"]:checked+label {
-  background-position: 0 -17px;
+    background-position: 0 -17px;
 }
 
 
 
 /* 버튼 */
 .btn_area {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  font-size: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    font-size: 0;
 }
 
 .btn_area>button:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .btn {
-  width: 70px;
-  height: 30px;
-  margin-right: 6px;
-  padding: 5px 20px;
-  border: 1px solid #666666;
-  border-radius: 3px;
-  font-size: 15px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+    width: 70px;
+    height: 30px;
+    margin-right: 6px;
+    padding: 5px 20px;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .col_black {
-  background-color: #444444;
-  font-family: NotoS_B;
-  color: #fff;
+    background-color: #444444;
+    font-family: NotoS_B;
+    color: #fff;
 }
 
 .btn_plusMinus {
-  overflow: hidden;
-  font-size: 0;
-  width: 94px;
-  height: 44px;
-  margin: 0 auto;
+    overflow: hidden;
+    font-size: 0;
+    width: 94px;
+    height: 44px;
+    margin: 0 auto;
 }
 
 .btn_plusMinus>button {
-  width: 44px;
-  height: 44px;
-  border-radius: 3px;
-  background-color: #666666;
-  font-family: NotoS_B;
-  font-size: 25px;
-  color: #fff;
-  line-height: 44px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 3px;
+    background-color: #666666;
+    font-family: NotoS_B;
+    font-size: 25px;
+    color: #fff;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn_plusMinus>button:disabled {
-  background-color: rgba(102, 102, 102, .25);
+    background-color: rgba(102, 102, 102, .25);
 }
 
 
@@ -410,176 +410,221 @@ input[type="checkbox"] {
 
 /* 셀렉트 박스*/
 select {
-  width: 100%;
-  height: 46px;
-  padding: 10px 17px;
-  border: 1px solid #dadada;
-  font-size: 18px;
-  -webkit-appearance: none;
-  /* 화살표 없애기 for chrome*/
-  -moz-appearance: none;
-  /* 화살표 없애기 for firefox*/
-  appearance: none;
+    width: 100%;
+    height: 46px;
+    padding: 10px 17px;
+    border: 1px solid #dadada;
+    font-size: 18px;
+    -webkit-appearance: none;
+    /* 화살표 없애기 for chrome*/
+    -moz-appearance: none;
+    /* 화살표 없애기 for firefox*/
+    appearance: none;
 }
 
 select::-ms-expand {
-  display: none;
-  /* 화살표 없애기 for IE10,11*/
+    display: none;
+    /* 화살표 없애기 for IE10,11*/
 }
 
 
 .select_box {
-  position: relative;
-  width: 254px;
-  height: 46px;
-  margin-right: 12px;
-  border: 1px solid #dadada;
-  border-radius: 4px;
+    position: relative;
+    width: 254px;
+    height: 46px;
+    margin-right: 12px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
 
 }
 
 
 .select_box::before {
-  content: '';
-  position: absolute;
-  right: 12px;
-  top: 18px;
-  width: 14px;
-  height: 8px;
-  background: url("../images/select_arrow.png") center no-repeat;
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 18px;
+    width: 14px;
+    height: 8px;
+    background: url("../images/select_arrow.png") center no-repeat;
 }
 
 
 .select_box select.view_select {
-  position: relative;
-  width: 254px;
-  height: 46px;
-  padding: 10px 17px;
-  border: none;
-  outline: none;
-  background: transparent;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* 화살표 보여지는 부분*/
+    position: relative;
+    width: 254px;
+    height: 46px;
+    padding: 10px 17px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* 화살표 보여지는 부분*/
 }
 
 
 /* table */
 .tbl_wrap_list {
-  position: relative;
-  width: 100%;
-  border-left: 0px solid #e2e1e3;
-  border-top: 2px solid #666;
-  border-right: 0px solid #e2e1e3;
-  border-bottom: 0px solid #DADADA;
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: #fff;
+    position: relative;
+    width: 100%;
+    border-left: 0px solid #e2e1e3;
+    border-top: 2px solid #666;
+    border-right: 0px solid #e2e1e3;
+    border-bottom: 0px solid #DADADA;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
 }
 
 .tbl_wrap_list .tbl_list {
-  width: 100%;
+    width: 100%;
 }
 
 .tbl_wrap_list .tbl_list thead th {
-  height: 45px;
-  padding: 0px 10px 0px 10px;
-  font-weight: normal;
-  background: #F5F5F5;
-  text-align: left;
-  border-bottom: 1px solid #DADADA;
-  font-family: NotoS_R;
-  color: #000;
+    height: 45px;
+    padding: 0px 10px 0px 10px;
+    font-weight: normal;
+    background: #F5F5F5;
+    text-align: left;
+    border-bottom: 1px solid #DADADA;
+    font-family: NotoS_R;
+    color: #000;
 }
 
 .tbl_wrap_list .tbl_list thead th:first-child {
-  padding-left: 30px;
+    padding-left: 30px;
 }
 
 .tbl_wrap_list .tbl_list tbody td {
-  height: 28px;
-  position: relative;
-  padding: 18px 10px;
-  text-align: left;
-  color: #282828;
-  border-bottom: 1px solid #DADADA;
+    height: 28px;
+    position: relative;
+    padding: 18px 10px;
+    text-align: left;
+    color: #282828;
+    border-bottom: 1px solid #DADADA;
 }
 
 .tbl_wrap_list .tbl_list tbody td:first-child {
-  padding-left: 30px;
+    padding-left: 30px;
 }
 
 .tbl_wrap_list .tbl_list tbody td a {
-  text-decoration: underline;
-  color: #000;
+    text-decoration: underline;
+    color: #000;
 }
 
 .tbl_wrap_list .tbl_list tbody td.nodata {
-  height: 140px;
-  background-color: #fff;
-  text-align: center;
-  color: #212529;
-  font-size: 13px;
+    height: 140px;
+    background-color: #fff;
+    text-align: center;
+    color: #212529;
+    font-size: 13px;
 }
 
 .tbl_wrap_list .tbl_list tbody td span {
-  color: #2782CE;
+    color: #2782CE;
 }
 
 .tbl_wrap_list .tbl_list tbody td p {
-  color: #282828;
-  opacity: 0.56;
-  margin-top: 10px;
-  line-height: 1;
+    color: #282828;
+    opacity: 0.56;
+    margin-top: 10px;
+    line-height: 1;
 }
 
 .tbl_wrap_list .tbl_list tbody tr:nth-child(even) {
-  background-color: #FAFAFB;
+    background-color: #FAFAFB;
 }
 
 /* Pagination */
 .pagination {
-  position: relative;
-  text-align: center;
-  height: 34px;
-  font-size: 15px;
-  color: #282828
+    position: relative;
+    text-align: center;
+    height: 34px;
+    font-size: 15px;
+    color: #282828
+}
+
+.pagination a {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #DADADA;
+    vertical-align: middle;
+}
+
+.pagination a:hover {
+    border-color: #666;
+}
+
+.pagination a::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    top: 12px;
+    left: 11px;
+}
+
+.pagination a.btn_first::after {
+    background: url(../images/icon_first.png) center center no-repeat;
+}
+
+.pagination a.btn_prev::after {
+    background: url(../images/icon_prev.png) center center no-repeat;
+}
+
+.pagination a.btn_last::after {
+    background: url(../images/icon_first.png) center center no-repeat;
+    transform: rotate(180deg);
+}
+
+.pagination a.btn_next::after {
+    background: url(../images/icon_prev.png) center center no-repeat;
+    transform: rotate(180deg);
+}
+
+.pagination a.off::after {
+    opacity: 0.25;
 }
 
 .pagination .wrap {
-  display: inline-block;
-  margin: 0 7px;
+    display: inline-block;
+    margin: 0 7px;
 }
 
 .pagination .wrap a {
-  display: inline-block;
-  width: 34px;
-  height: 34px;
-  margin: 0 3px;
-  line-height: 30px;
-  vertical-align: middle;
-  border: 1px solid #DADADA;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin: 0 3px;
+    line-height: 30px;
+    vertical-align: middle;
+    border: 1px solid #DADADA;
 }
 
 .pagination .wrap a:hover {
-  text-decoration: none;
-  border-color: #666;
+    text-decoration: none;
+    border-color: #666;
 }
 
 .pagination .wrap a.on {
-  border-color: #666;
+    border-color: #666;
 }
 
 .pagination img {
-  margin: 0 4px;
-  vertical-align: middle;
+    margin: 0 4px;
+    vertical-align: middle;
 }
 
 .pagination .btn_right {
-  position: absolute;
-  top: 0;
-  right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
+
 /* //Pagination */
