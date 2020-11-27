@@ -10,9 +10,6 @@
     display: flex !important;
 }
 
-
-444444444444444444444444444444444444
-
 .dfb {
     display: block;
 }
@@ -464,17 +461,6 @@ input[type="checkbox"] {
     background-position: 0 -17px;
 }
 
-
-.check_default input[type="checkbox"].only:checked+label {
-    background-position: 0 -17px;
-}
-.check_default input[type="checkbox"].only:checked+label {
-    background-position: 0 -17px;
-}
-
-.check_default input[type="checkbox"].only:checked+label {
-    background-position: 0 -17px;
-}
 
 /* 버튼 */
 .btn_area {
