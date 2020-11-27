@@ -239,7 +239,6 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
 }
 .form_groupRo.bbbbbbbbbb {
     position: relative;
@@ -264,11 +263,6 @@ textarea {
     background-color: #fff;
     border: 1px solid #dadada;
     font-size: 15px;
-}
-
-.test {
-    position: relative;
-    display: block;
 }
 
 .form_groupRow>.form_group {
