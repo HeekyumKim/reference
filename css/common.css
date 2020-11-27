@@ -45,12 +45,20 @@
     width: 100% !important;
 }
 
+.w188 {
+    width: 188px !important;
+}
+
 .w210 {
     width: 210px !important;
 }
 
 .w230 {
     width: 230px !important;
+}
+
+.w240 {
+    width: 240px !important;
 }
 
 .w290 {
@@ -507,6 +515,12 @@ input[type="checkbox"] {
     text-decoration: none;
     cursor: pointer;
     background-color: #2782CE;
+}
+
+.btn_big.white {
+    color: #B5B5B5;
+    border: 1px solid #DADADA;
+    background-color: #fff;
 }
 
 .col_black {

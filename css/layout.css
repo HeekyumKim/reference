@@ -1049,6 +1049,53 @@ z-index: 999;
 }
 /* //login */
 
+/* error page */
+.error_wrap {
+    position: absolute;
+    display: block;
+    width: 810px;
+    height: 260px;
+    padding-left: 260px;
+    margin: auto;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.error_wrap::after {
+    content: '';
+    position: absolute;
+    width: 195px;
+    height: 225px;
+    top: 0px;
+    left: 0px;
+    background: url(../images/icon_error.png) left top no-repeat;
+}
+
+.error_wrap h2 {
+    display: block;
+    font-family: NotoS_B;
+    font-size: 34px;
+    color: #282828;
+    text-align: left;
+}
+
+.error_wrap p {
+    display: block;
+    font-size: 18px;
+    color: #282828;
+    line-height: 24px;
+    text-align: left;
+    margin: 15px 0 31px 0;
+}
+
+.error_wrap .wrap_btn {
+    display: block;
+    margin-top: 38px;
+}
+/* //error page */
+
 
 /* admin */
 .wrap_user {
