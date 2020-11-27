@@ -38,6 +38,15 @@ $(function () {
 });
 
 
+$(function () {
+
+    $("#downicon").on("click", function () {
+		$(".updown_wrap").parents(".bg_gray").toggleClass("active");
+		$(".upsec_wrap").slideToggle("normal");
+    });
+});
+
+
 $(document).ready(function () {
 
 	/* -------------------------------------------------
