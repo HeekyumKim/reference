@@ -163,7 +163,14 @@
                             </div>
                         </div>
                         <!-- //form -->
-                        <h3 class="mgt38">메뉴권한</h3>
+                        <h3 class="mgt38">하위코드
+                            <!-- 추가/삭제 버튼 -->
+                            <div class="tree_icon fr">
+                                <button type="button" class="icon_add"><span class="blind">추가</span></button>
+                                <button type="button" class="icon_del"><span class="blind">삭제</span></button>
+                            </div>
+                            <!-- //추가/삭제 버튼 -->
+                        </h3>
                         <!-- table list -->
                         <div class="tbl_wrap_list form mgt13">
                             <table class="tbl_list" summary="테이블 입니다. 항목으로는 등이 있습니다">
@@ -173,7 +180,7 @@
                                     <col width="" />
                                     <col width="" />
                                     <col width="" />
-                                    <col width="500px" />
+                                    <col width="300px" />
                                 </colgroup>
                                 <thead>
                                     <tr>
@@ -185,7 +192,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
                                         <td>
                                             <div class="form_group admin">
                                                 <input type="text" name="" value="" placeholder="코드명 입력"
@@ -220,6 +227,84 @@
                                                 <div class="radio_default admin">
                                                     <input type="radio" id="radiof01-2" name="radiof01" value="" />
                                                     <label for="radiof01-2">미사용</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';">
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="코드명 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="6자리 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="기타 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="숫자 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <div class="radio_default admin">
+                                                    <input type="radio" id="radiof02-1" name="radiof02" value=""
+                                                        checked />
+                                                    <label for="radiof02-1">사용</label>
+                                                </div>
+                                                <div class="radio_default admin">
+                                                    <input type="radio" id="radiof02-2" name="radiof02" value="" />
+                                                    <label for="radiof02-2">미사용</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr onmouseover="this.className='on'" onmouseout="this.className=''" onclick="location.href='#';" class="on">
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="코드명 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="6자리 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="기타 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <input type="text" name="" value="" placeholder="숫자 입력"
+                                                    class="form_control2 w210">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form_group admin">
+                                                <div class="radio_default admin">
+                                                    <input type="radio" id="radiof03-1" name="radiof03" value=""
+                                                        checked />
+                                                    <label for="radiof03-1">사용</label>
+                                                </div>
+                                                <div class="radio_default admin">
+                                                    <input type="radio" id="radiof03-2" name="radiof03" value="" />
+                                                    <label for="radiof03-2">미사용</label>
                                                 </div>
                                             </div>
                                         </td>

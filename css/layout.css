@@ -1050,7 +1050,39 @@
     z-index: 10;
 }
 
-
+.tree_icon {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+}
+.tree_icon button {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.tree_icon button:last-child {
+    margin: 0;
+}
+.tree_icon button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+}
+.tree_icon .icon_add::after {
+    background: url("../images/tree_add.png") no-repeat center;
+}
+.tree_icon .icon_del::after {
+    background: url("../images/tree_minus.png") no-repeat center;
+}
+.tree_icon .icon_modi::after {
+    width: 16px;
+    height: 15px;
+    background: url("../images/tree_modi.png") no-repeat center;
+}
 
 
 /* //admin */
