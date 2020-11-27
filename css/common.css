@@ -225,9 +225,7 @@ textarea {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-}
+    display: flex;}
 
 .form_groupRow>.form_group {
     width: 392px;
