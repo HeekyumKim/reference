@@ -118,6 +118,10 @@
 }
 
 /* *아래* */
+.mgb0 {
+    margin-bottom: 0px !important
+}
+
 .mgb9 {
     margin-bottom: 9px !important
 }
@@ -506,6 +510,20 @@ input[type="checkbox"] {
     text-decoration: none;
     cursor: pointer;
     background-color: #fff;
+}
+
+.btn_big {
+    width: 100%;
+    height: 46px;
+    margin-right: 6px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #2782CE;
 }
 
 .col_black {

@@ -1009,13 +1009,29 @@
     position: absolute;
     display: block;
     width: 560px;
-    height: 406px;
+    height: 400px;
     margin: auto;
     top: 40px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+}
+
+.login_wrap h2 {
+    display: block;
+    font-family: NotoS_B;
+    font-size: 34px;
+    color: #282828;
+    text-align: center;
+}
+
+.login_wrap p {
+    font-size: 18px;
+    color: #282828;
+    opacity: 0.56;
+    text-align: center;
+    line-height: 1;
+    margin: 15px 0 48px 0;
 }
 /* //login */
 
@@ -1144,8 +1160,6 @@
     height: 15px;
     background: url("../images/tree_modi.png") no-repeat center;
 }
-
-
 /* //admin */
 
 
