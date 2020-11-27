@@ -49,6 +49,10 @@
     width: 210px !important;
 }
 
+.w230 {
+    width: 230px !important;
+}
+
 .w290 {
     width: 290px !important;
 }
@@ -67,9 +71,19 @@
 .mgt10 {
     margin-top: 10px
 }
+
+.mgt11 {
+    margin-top: 11px
+}
+
+.mgt12 {
+    margin-top: 12px
+}
+
 .mgt13 {
     margin-top: 13px
 }
+
 .mgt15 {
     margin-top: 15px
 }
@@ -80,6 +94,14 @@
 
 .mgt27 {
     margin-top: 27px !important
+}
+
+.mgt35 {
+    margin-top: 35px !important
+}
+
+.mgt38 {
+    margin-top: 38px !important
 }
 
 .mgt45 {
@@ -228,6 +250,10 @@ textarea {
     margin-bottom: 21px;
 }
 
+.form_group.admin {
+    margin-bottom: 0;
+}
+
 .form_group .control_label {
     display: block;
     margin-bottom: 5px;
@@ -235,6 +261,10 @@ textarea {
     font-family: 'NotoS_B';
     color: #282828;
     line-height: 1;
+}
+
+.form_group.admin .control_label {
+    margin-bottom: 11px;
 }
 
 .form_group .form_control {
@@ -625,11 +655,16 @@ select::-ms-expand {
 
 .tbl_wrap_list .tbl_list tbody td {
     position: relative;
-    padding: 15px 10px 16px 10px;
+    line-height: 20px;
+    padding: 12px 10px 13px 10px;
     text-align: left;
     color: #282828;
     border-bottom: 1px solid #DADADA;
     font-size: 15px;
+}
+
+.tbl_wrap_list.form .tbl_list tbody td {
+    padding: 6px 10px 7px 10px;
 }
 
 .tbl_wrap_list .tbl_list tbody td:first-child {
@@ -666,6 +701,10 @@ select::-ms-expand {
     color: #222;
     background: #ebf4fb;
     cursor: pointer;
+}
+
+.tbl_wrap_list .tbl_list tbody td .check_default.admin label {
+    margin-top: 0px;
 }
 
 /* Pagination */

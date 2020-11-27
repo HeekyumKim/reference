@@ -623,6 +623,35 @@
     padding-top: 40px;
 }
 
+.content_wrap .listWrap.admin .content_list h2 {
+    position: relative;
+    display: block;
+    border-bottom: 2px solid #666;
+    font-size: 18px;
+    font-family: NotoS_B;
+    color: #282828;
+    padding: 0px 0 13px 0;
+    margin-bottom: 15px;
+}
+
+.content_wrap .listWrap.admin .content_list h2 span {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 13px;
+    font-family: NotoS_R;
+    color: #282828;
+    opacity: 0.56;
+}
+
+.content_wrap .listWrap.admin .content_list h3 {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-family: NotoS_B;
+    color: #282828;
+}
+
 /* = content s = */
 .content_list {
     overflow: hidden;
