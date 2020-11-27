@@ -353,6 +353,14 @@ textarea {
     background-color: #666666;
   }
 
+  .view_line{
+    width:1200px;
+    height: 1px;   
+    margin-top:101px;
+    margin-bottom:59px;
+    background-color: #dadada;
+  }
+
 /* 라디오,체크 */
 .rc_wrap {
     position: relative;
