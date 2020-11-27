@@ -461,10 +461,11 @@ input[type="checkbox"] {
 }
 
 .check_default input[type="checkbox"]:checked+label {
-    background-position: 0 -17px;
+    background-position: 0 -17px;   
 }
 .check_default label.checkonly{
   text-indent: -99999px;
+  margin-top: 0;
 }
 
 
