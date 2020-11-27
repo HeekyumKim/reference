@@ -460,6 +460,27 @@ input[type="checkbox"] {
     background-position: 0 -17px;
 }
 
+.check_default input[type="checkbox"].checkonly {
+    position: relative;
+    display: inline-block;
+    width:16px;
+    height: 17px;
+    padding-left: 25px;
+    margin-top: 4px;
+    font-size: 18px;
+    line-height: 1;
+    background: url("../images/checkbox.png") no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer; 
+    visibility: visible;
+    opacity: 100%;
+    /* clip: rect(0 0 0 0); */
+
+
+}
+.check_default input[type="checkbox"].checkonly:checked{
+    background-position: 0 -17px;
+}
 
 /* 버튼 */
 .btn_area {
