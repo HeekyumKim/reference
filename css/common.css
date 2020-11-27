@@ -221,6 +221,19 @@ textarea {
     font-size: 15px;
 }
 
+.form_groupRo.aaaaaaaaa {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    width: auto;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    font-size: 15px;
+}
+
 .form_groupRow {
     position: relative;
     display: -webkit-box;
