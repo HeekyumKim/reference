@@ -711,6 +711,8 @@
 .tab_content .imgdown_wrap {
     display: block;
     text-align: right;
+    height: 19px;
+    margin-bottom:15px
 }
 
 .tab_content .imgdown_wrap > button {
@@ -718,8 +720,7 @@
     padding: 0 7px 0 10px;
     font-size: 13px;
     line-height: 1.2;
-    text-decoration: underline;
-    margin-bottom: 15px;
+    text-decoration: underline;  
 }
 .tab_content .imgdown_wrap > button:first-child:after{
     display: none;
@@ -864,7 +865,20 @@
 }
 
 
-.viewWeb_wrap input{}
+.viewWeb_wrap .check_default {
+display: block;
+z-index: 999;
+    position: absolute;
+    top:0;
+    right:0;
+    margin-right:0;
+    margin-bottom: 10px
+}
+
+.viewWeb_wrap .webimgArea {
+    position: relative;
+    padding-top: 26px;
+}
 /* == viewWeb_wrap e == */
 
 
