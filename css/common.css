@@ -121,6 +121,9 @@
 }
 
 /* *오른쪽* */
+.mgr0{
+    margin-right: 0px !important
+}
 .mgr6 {
     margin-right: 6px !important
 }
@@ -486,6 +489,7 @@ input[type="checkbox"] {
 .check_default label.checkonly{
   text-indent: -99999px;
   margin-top: 0;
+  padding-left: 17px;
 }
 
 

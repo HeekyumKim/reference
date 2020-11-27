@@ -117,7 +117,7 @@
             <!-- //snb -->
 
             <div class="tab_menu_wrap">
-               <!-- <div class="menuTree_wrap">
+               <div class="menuTree_wrap">
                   <div class="menuTree">
                      <div class="tree_boxTop">
                         <div class="treeTitle fl">국세청 보이는 ARS 구축</div>
@@ -155,11 +155,11 @@
                         </ul>
                      </div>
                   </div>
-               </div> -->
+               </div>
                <!-- //tree -->          
 
                <div class="tab_menu mgt13">
-                  <button class="tablinks" onclick="openCity(event, 'Consol')" id="defaultOpen">이미지</button>
+                  <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Consol')" >이미지</button>
                   <button class="tablinks" onclick="openCity(event, 'Img')">파일</button>
                </div>
             </div>
@@ -265,24 +265,14 @@
                           <!-- view_his_wrap s -->
                         <div class="view_his_wrap">
                             <div class="view_hisTit">이력보기
-                                <a href="#"><span>더보기</span></a>
+                                <a href="#">더보기</a>
                             </div>
                             <ul>
                                 <li>
                                     <div class="user">
                                         <img src="./images/photo_user_sample2.png">
                                     </div>
-                                    <div class="info_wrap">                                
-                                        <span> 2020-10-30 09*:38:28</span>
-                                        <span> CIT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 파일다운로드 하였습니다.</span>
-                                        <span>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </span>
-                                    </div>
-                                </li>
-                                  <li>
-                                    <div class="user">
-                                        <img src="./images/photo_user_sample2.png">
-                                    </div>
-                                    <div class="info_wrap">                                
+                                    <div class="info_wrap">
                                         <span> 2020-10-30 09*:38:28</span>
                                         <span> CIT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 파일다운로드 하였습니다.</span>
                                         <span>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </span>
@@ -292,39 +282,200 @@
                                     <div class="user">
                                         <img src="./images/photo_user_sample2.png">
                                     </div>
-                                    <div class="info_wrap">                                
+                                    <div class="info_wrap">
                                         <span> 2020-10-30 09*:38:28</span>
                                         <span> CIT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 파일다운로드 하였습니다.</span>
                                         <span>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </span>
                                     </div>
                                 </li>
-                                 <li>
+                                <li>
                                     <div class="user">
                                         <img src="./images/photo_user_sample2.png">
                                     </div>
-                                    <div class="info_wrap">                                
+                                    <div class="info_wrap">
+                                        <span> 2020-10-30 09*:38:28</span>
+                                        <span> CIT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 파일다운로드 하였습니다.</span>
+                                        <span>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="user">
+                                        <img src="./images/photo_user_sample2.png">
+                                    </div>
+                                    <div class="info_wrap">
                                         <span> 2020-10-30 09*:38:28</span>
                                         <span> CIT 사업부 홍길동님(test123)이 국세청 보이는 ARS구축 프로젝트를 파일다운로드 하였습니다.</span>
                                         <span>[메뉴구조도.xls] [기획안.pptx] , [이미지.zip] , [html.zip] </span>
                                     </div>
                                 </li>
                             </ul>
-                        
-                        
                         </div>
                          <!-- view_his_wrap e -->
-
-
-
-
-                        <!-- view_WM_wrap e -->   
-
                      </div>
                      <!--// tab1 종료 -->
    
                      <div class="tab_content" id="Img">
-                        <div class="listBox">
-                           이미지 내용
+                        <div class="imgdown_wrap">
+                            <button type="button" class="active">전체 다운로드</button>                          
+                            <button type="button">선택 다운로드</button>
+                         </div>
+                        <div class="fileList">
+                            <ul>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox1" checked="checked">
+                                        <label for="checkbox1" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox2">
+                                        <label for="checkbox2" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox3">
+                                        <label for="checkbox3" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox4">
+                                        <label for="checkbox4" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.니다출력됩니다출력됩니다니다출력됩니다출력됩니다니다출력됩니다출력됩니다</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span>홍길동홍길</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox5">
+                                        <label for="checkbox5" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox6">
+                                        <label for="checkbox6" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox7">
+                                        <label for="checkbox7" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox8">
+                                        <label for="checkbox8" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox9">
+                                        <label for="checkbox9" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox10">
+                                        <label for="checkbox10" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="check_default mgr0">
+                                        <input type="checkbox" id="checkbox5">
+                                        <label for="checkbox5" class="checkonly">체크</label>
+                                    </div>
+                                    <div class="filelist_left">
+                                        <p>SKB LBS 메뉴정보도.xlsx</p>
+                                        <p>등록시 입력한 파일 설명 부분이 출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다출력됩니다.</p>
+                                    </div>
+                                    <div class="filelist_rist">
+                                        <span> 홍길동</span>
+                                        <span> 2020-10-30 12:25:30</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                      </div>
                      <!--// tab2 종료 -->
