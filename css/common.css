@@ -116,6 +116,10 @@
     margin-top: 45px !important
 }
 
+.mgt100 {
+    margin-top: 100px !important
+}
+
 /* *오른쪽* */
 .mgr6 {
     margin-right: 6px !important
@@ -499,7 +503,7 @@ input[type="checkbox"] {
 }
 
 .btn {
-    width: 70px;
+    width: auto;
     height: 30px;
     margin-right: 6px;
     padding: 5px 20px;
@@ -832,3 +836,138 @@ select::-ms-expand {
     border-color: #666;
 }
 /* //Pagination */
+
+/* popup */
+.ly_group, .ly_group_s,
+[class*="layer_"] {
+    display: none;
+}
+
+[class*="layer_"] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 33px 30px 29px 30px;
+    border: 1px solid #707070;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.ly_group.on, .ly_group_s.on,
+[class*="layer_"].on {
+    display: block;
+}
+
+.ly_group.on,
+.ly_group.call {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 200;
+}
+
+.ly_group_s.on {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(255, 255, 255, 0.7); */
+    z-index: 200;
+}
+
+[class*="layer_"]>h1 {
+    /* margin-bottom: 11px; */
+    font-size: 34px;
+    color: #282828;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.ly_con>[class*="panel"] {
+    position: relative;
+    font-size: 15px;
+}
+
+.ly_con {
+    font-size: 15px;
+}
+
+.ly_con>p {
+    /* margin-bottom: 27px; */
+    font-size: 15px;
+    color: #282828;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* 닫기버튼 */
+[data-fn="lyClose"] {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 34px;
+    height: 0;
+    padding: 34px 0 0;
+    /* background-color: #f5f5f5; */
+    z-index: 2;
+}
+
+[data-fn="lyClose"]:before,
+[data-fn="lyClose"]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    margin: -1px 0 0 -7px;
+    background: #666;
+}
+
+[data-fn="lyClose"]:before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+[data-fn="lyClose"]:after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ly_group .wrap_btn, .ly_group_s .wrap_btn {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* popup_size */
+.layer_s {
+    width: 420px;
+}
+
+.layer_m {
+    width: 660px;
+}
+
+.layer_l {
+    width: 720px;
+}
+
+.layer_xl {
+    width: 940px;
+}
+
+/* //popup */
