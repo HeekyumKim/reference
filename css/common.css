@@ -241,6 +241,30 @@ textarea {
     display: flex;
     text-align: center;
 }
+.form_groupRo.bbbbbbbbbb {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    width: auto;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    font-size: 15px;
+}
+.form_groupRo.bddddddddddddd {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    width: auto;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    font-size: 15px;
+}
 
 .form_groupRow>.form_group {
     width: 392px;
