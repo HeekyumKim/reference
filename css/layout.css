@@ -1015,7 +1015,9 @@
     position: relative;
     width: 100%;
 }
-
+.fileList ul {  
+    border-top: 2px solid #666;
+}
 .fileList ul li {
     position: relative;
     display: -webkit-box;
