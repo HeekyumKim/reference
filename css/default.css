@@ -52,10 +52,8 @@ textarea:-ms-input-placeholder{color:#B5B5B5;font-family: 'NotoS_L';}
 
 textarea {vertical-align:middle; overflow-y: auto; resize:none /*none:조절불가, both:가로/세로 조절 가능, horizontal:가로 조절만 가능, vertical:세로조절만 가능*/}
 
-/* input 포커스 색상 */
-
-
-
+/* select 포커스 색상 */
+.select_box select.view_select:focus {border-radius:4px ;border:2px solid #2782CE;}
 
 /* ie 검색어 삭제 버튼 안보이기 */
 input::-ms-clear,input::-ms-reveal {display: none; width : 0; height: 0;} 

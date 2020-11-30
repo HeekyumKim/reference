@@ -91,8 +91,8 @@
    
             <div class="tab_menu_wrap">
                <div class="tab_menu">
-                  <button class="tablinks" onclick="openCity(event, 'Consol')" id="defaultOpen">통합</button>
-                  <button class="tablinks" onclick="openCity(event, 'Img')">이미지</button>
+                  <button class="tablinks" onclick="openTab(event, 'Consol')" id="defaultOpen">통합</button>
+                  <button class="tablinks" onclick="openTab(event, 'Img')">이미지</button>
                </div>
             </div>
             <!-- //탭메뉴  -->
@@ -283,7 +283,7 @@
 
 <!-- 탭 -->
 <script>
-   function openCity(evt, tabName) {
+   function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tab_content");
       for (i = 0; i < tabcontent.length; i++) {
