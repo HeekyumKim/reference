@@ -39,13 +39,27 @@ $(function () {
 
 
 $(function () {
+	// 상세보기
+	var $toggle_view = $('.updown_wrap');
 
-    $("#downicon").on("click", function () {
-		$(".updown_wrap").parents(".bg_gray").toggleClass("active");
-		$(".upsec_wrap").slideToggle("normal");
-    });
+	$('.view_open').on('click', function () {
+		$toggle_view.addClass('show');
+	});
+
+	$('.view_close').on('click', function () {
+		$toggle_view.removeClass('show');
+	});
+
+
+	// 유지보수 여부
+	$('.form_groupRow .radio_default').on('click', function () {
+		if ($(this).children('input[type="radio"]').attr('id') != "use") {
+			$('.maintain').hide();
+		} else {
+			$('.maintain').show();
+		}
+	});
 });
-
 
 $(document).ready(function () {
 

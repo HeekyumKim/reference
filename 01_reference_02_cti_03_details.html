@@ -75,18 +75,17 @@
                     <button type="button" class="btn ">삭제</button>
                     <button type="button" class="btn ">이력</button>
                 </div>
-            </div>
-    
+            </div>    
         </div>
+
+         <!-- view_open s-->
         <div class="bg_gray">
             <div class="updown_wrap">
                 <div class="updownTxt">
                     <span class="up_sumner">
-                        SKB MSP와 SKT Thing Plug 연동정보를 통해 목적물(Vehicle, 이동자산) 또는 대인에 대한 위치 및 이동경로등을 GPS,또는 대인에 대한 위치 및 이동경로등을 GPS 이용수집하여이용수집하여이용수집하여이용수집하여
-                        이용수집하여이용수집하여</span>
-                        <button type="button" class="downarrow" id="downicon"><span class="blind">펼침</span></button>
+                        SKB MSP와 SKT Thing Plug 연동정보를 통해 목적물(Vehicle, 이동자산) 또는 대인에 대한 위치 및 이동경로등을 GPS,또는 대인에 대한 위치 및 이동경로등을 GPS 이용 수집하여 이동경로등을 GPS,또는 대인에 대한 위치</span>
+                    <button type="button" class="view_open"><span class="blind">펼침</span></button>
                 </div>
-              
                 <div class="upsec_wrap">
                     <div class="keyword">
                         <span class="txt">#IoT</span>
@@ -97,19 +96,19 @@
                         <span class="txt">#롯데렌탈</span>
                         <span class="txt">#롯데렌탈롯데렌탈</span>
                     </div>
-    
+        
                     <div class="clientDate">
                         <span>네오넥스소프트</span>
                         <span>홍길동부장/김태호차장</span>
                         <span>2020-10-01</span>
                     </div>
                     <p class="issue">준비 되지 않은 고객으로 인하여 프로젝트 일정이 조절이 안되어 2개월의 추가일정 발생</p>
-                </div>
-    
+                    <button type="button" class="view_close">프로젝트 상세정보 닫기<span class="up_icon"></span></button>
+                </div>        
             </div>
         </div>
+        <!-- view_open e-->
         <!-- view_tit s-->
-    
     
         <!-- snbTab s-->
         <div class="snbTab_wrap">
@@ -164,8 +163,8 @@
                 <!-- //tree -->
     
                 <div class="tab_menu mgt13">
-                    <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Consol')">이미지</button>
-                    <button class="tablinks" onclick="openCity(event, 'Img')">파일</button>
+                    <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'openImg')">이미지</button>
+                    <button class="tablinks" onclick="openTab(event, 'openFile')">파일</button>
                 </div>
             </div>
             <!-- //탭메뉴  -->
@@ -184,7 +183,7 @@
                <div class="content_list">
                   <!-- tabMenu content s -->
                   <div class="tab_cont_wrap">
-                     <div class="tab_content" id="Consol">
+                     <div class="tab_content" id="openImg">
                           <!-- view_WM_wrap s -->
                         <div class="imgdown_wrap">
                            <button type="button" class="active">전체 다운로드</button>                          
@@ -319,7 +318,7 @@
                      </div>
                      <!--// tab1 종료 -->
    
-                     <div class="tab_content" id="Img">
+                     <div class="tab_content" id="openFile">
                         <div class="imgdown_wrap">
                             <button type="button" class="active">전체 다운로드</button>                          
                             <button type="button">선택 다운로드</button>
@@ -526,7 +525,7 @@
 
 <!-- 탭 -->
 <script>
-   function openCity(evt, tabName) {
+   function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tab_content");
       for (i = 0; i < tabcontent.length; i++) {

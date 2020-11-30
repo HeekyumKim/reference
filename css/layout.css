@@ -368,81 +368,74 @@
     color: #282828;
 }
 
-
-
+/* = view_open e = */
 .bg_gray {
     z-index: 2001;
     overflow: hidden;
     position: absolute;
-    top:74px;
+    top: 74px;
     width: 100%;
     margin: 0 auto;
     background-color: #F5F5F5;
 }
 .bg_gray .updown_wrap {
     overflow: hidden;
-
-    width:1400px;
+    width: 1400px;
     height: auto;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
-
-.updown_wrap .updownTxt{
+.updown_wrap .updownTxt {
     position: relative;
     display: block;
 }
 
-.bg_gray .up_sumner {
+.updown_wrap .up_sumner {
     overflow: hidden;
     display: inline-block;
     max-width: 1200px;
     font-size: 15px;
     line-height: 1.2;
-    white-space: nowrap;  
+    white-space: nowrap;
     text-overflow: ellipsis;
 }
-
-.updown_wrap .downarrow {
+.updown_wrap .view_open {
     display: inline-block;
     position: absolute;
     top: 3px;
     width: 10px;
     height: 10px;
     margin-left: 10px;
-    border-top: 3px solid rgba(118, 118, 118, 0.56);
-    border-right: 3px solid rgba(118, 118, 118, 0.56);
+    border-top: 3px solid #767676;
+    border-right: 3px solid #767676;
     transform: rotate(135deg);
 }
 
-.updown_wrap .upsec_wrap{
+.updown_wrap .upsec_wrap {
     display: none;
     overflow: hidden;
     position: relative;
 }
-
 .updown_wrap .keyword {
     position: relative;
-    margin-top:8px; 
+    margin-top: 8px;
     font-size: 0;
 }
-
 .updown_wrap .keyword .txt {
     display: inline-block;
     height: 27px;
     padding: 0 16px;
     margin-bottom: 9px;
     margin-right: 6px;
-    border-radius: 27px;   
+    border-radius: 27px;
     background-color: #dadada;
     font-size: 15px;
     line-height: 24px;
 }
 
-.updown_wrap .clientDate{
+.updown_wrap .clientDate {
     overflow: hidden;
     position: relative;
 }
-
 .updown_wrap .clientDate span {
     display: block;
     float: left;
@@ -455,17 +448,15 @@
     color: #666;
 }
 
-.updown_wrap .clientDate span:first-child{
-   padding-left:0px
+.updown_wrap .clientDate span:first-child {
+    padding-left: 0;
 }
-.updown_wrap .clientDate span:first-child::after{
+.updown_wrap .clientDate span:first-child::after {
     display: none;
 }
-
-.updown_wrap .clientDate span:first-child::after{
+.updown_wrap .clientDate span:first-child::after {
     display: none;
 }
-
 .updown_wrap .clientDate span::after {
     content: '';
     display: block;
@@ -478,37 +469,48 @@
     background-color: #dadada;
 }
 
-
 .updown_wrap .issue {
-    font-size:13px;
-    margin: 6px 0 16px
+    font-size: 13px;
+    margin: 6px 0 16px;
+}
+.updown_wrap .view_close {
+    position: relative;
+    display: block;
+    width: 1400px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: center;
+}
+.updown_wrap .view_close .up_icon {
+    position: absolute;
+    top: 6px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-top: 3px solid #767676;
+    border-right: 3px solid #767676;
+    transform: rotate(315deg);
 }
 
-.bg_gray.active .up_sumner{
+.updown_wrap.show .up_sumner {
     overflow: hidden;
     display: inline-block;
     max-width: 1200px;
     font-size: 15px;
     line-height: 1.2;
-    white-space: normal; 
+    white-space: normal;
     text-overflow: clip;
     word-break: normal;
 }
-
-.bg_gray.active .downarrow:after {
-    display: inline-block;
-    content:"프로젝트 상세정보 접기" ;
-    position: absolute;
-    top: 3px;
-    bottom:3px;
-    width: 10px;
-    height: 10px;
-    margin-left: 10px;
-    border-top: 3px solid rgba(118, 118, 118, 0.56);
-    border-right: 3px solid rgba(118, 118, 118, 0.56);
-    transform: rotate(135deg);
+.updown_wrap.show .upsec_wrap {
+    display: block;
 }
-/* = view_tit e = */
+.updown_wrap.show .view_open {
+    display: none;
+}
+/* = view_open e = */
 
 
 /* == tree s == */
