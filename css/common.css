@@ -323,6 +323,12 @@ textarea {
     outline-color: #2782CE;
 }
 
+.form_group .datecal {
+    background-image: url(../images/calendar.png);
+    background-position: right 20px top 10px;
+    background-repeat: no-repeat;
+}
+
 .form_group.admin.datepicker input {
     background: url(../images/icon_calendar_admin.png) right 3px no-repeat;
 }
