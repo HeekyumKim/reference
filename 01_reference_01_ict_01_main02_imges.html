@@ -27,7 +27,7 @@
 
    <div id="wrap">
       <!-- header -->
-      <div class="header_wrap">
+      <div class="header_wrap fix">
          <div class="header">
             <div class="gnb_group">
                <h1>
@@ -65,7 +65,7 @@
       <!-- //header -->
    
       <!-- sticky -->
-      <div class="sta_wrap" id="sti">
+      <div class="sta_wrap fix">
          <!-- 검색영역 s -->
          <div class="seach_wrap">
             <div class="search">
@@ -82,7 +82,7 @@
          <!-- 검색영역 e -->
    
          <!-- snbTab s-->
-         <div class="snbTab_wrap">
+         <div class="snbTab_wrap imgflex">
             <div class="snb_wrap">
                <ul>
                   <li class="snbtit"><a href="#" class="active"><span class="blind">화살표</span>ICT사업본부</a></li>
@@ -93,8 +93,12 @@
    
             <div class="tab_menu_wrap">
                <div class="tab_menu">
-                  <button class="tablinks tabconsol" onclick="openTab(event, 'Consol')" id="defaultOpen">통합</button>
-                  <button class="tablinks tabimg" onclick="openTab(event, 'Img')" >이미지</button>
+                  <button class="tablinks tabconsol" onclick="openTab(event, 'Consol')">통합</button>
+                  <button class="tablinks tabimg" onclick="openTab(event, 'Img')" id="defaultOpen" >이미지</button>
+               </div>
+               <div class="imgdown_wrap img_postop">
+                  <button type="button" class="active">전체 다운로드</button>
+                  <button type="button">선택 다운로드</button>
                </div>
             </div>
             <!-- //탭메뉴  -->
@@ -104,10 +108,10 @@
       <!-- //sticky -->
    
       <!-- container -->
-      <div id="container">
+      <div id="container" style="margin-top: 234px;">
          <!-- content_wrap S-->
-         <div class="content_wrap">
-            <div class="listWrap">
+         <div class="content_wrap imgflex">
+            <div class="listWrap pdt25">
    
                <!-- content s-->
                <div class="content_list">
@@ -237,10 +241,7 @@
                      <!--// tab1 종료 -->
    
                      <div class="tab_content img_content" id="Img">
-                        <div class="imgdown_wrap">
-                           <button type="button" class="active">전체 다운로드</button>
-                           <button type="button">선택 다운로드</button>
-                        </div>
+                     
    
                         <div class="imgBox">
    
