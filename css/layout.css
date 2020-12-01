@@ -666,7 +666,6 @@
 
 /* = //snb = */
 
-
 .tab_menu_wrap {
     position: relative;
     width: 1200px;
@@ -697,6 +696,18 @@
     color: #282828;
     border-bottom: 3px solid #2782CE;
 }
+
+/* 이미지 탭 s */
+.snbTab_wrap.imgflex{width:100%;padding-right:42px;padding-left:42px;}
+.snbTab_wrap.imgflex .snb_wrap{display:none;}
+.snbTab_wrap.imgflex .tab_menu_wrap{margin-left:0;width:100%;}
+.content_wrap.imgflex{position:relative;width:100%;}
+.content_wrap.imgflex .listWrap{width:100%;margin:0 auto;padding-top:35px;padding-right:27px;padding-left:27px;}
+.content_wrap.imgflex .content_list{width:100%;padding-left:0;}
+
+/* 이미지 탭 e */
+
+
 
 /* = //탭메뉴  = */
 
@@ -770,7 +781,7 @@
 }
 
 /* = tabMenu content s = */
-.tab_cont_wrap>div {
+.tab_cont_wrap > div {
     display: none;
 }
 
@@ -786,7 +797,7 @@
     width: 1200px;
 }
 
-.tab_content .imgdown_wrap {
+.imgdown_wrap {
     display: block;
     text-align: right;
     height: 19px;
@@ -794,17 +805,17 @@
     font-family: 'NotoS_B';
 }
 
-.tab_content .imgdown_wrap > button {
+.imgdown_wrap > button {
     display: inline-block;
     padding: 0 7px 0 10px;
     font-size: 13px;
     line-height: 1.2;
     text-decoration: underline;  
 }
-.tab_content .imgdown_wrap > button:first-child:after{
+.imgdown_wrap > button:first-child:after{
     display: none;
 }
-.tab_content .imgdown_wrap > button::after {
+.imgdown_wrap > button::after {
     content: '';
     display: block;
     position: absolute;
@@ -816,8 +827,8 @@
     background-color: #dadada;
 }
 
-.tab_content .imgdown_wrap > button.active,
-.tab_content .imgdown_wrap > button:focus
+.imgdown_wrap > button.active,
+.imgdown_wrap > button:focus
 {
     color: #2782CE
 }

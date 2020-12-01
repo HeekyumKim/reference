@@ -59,6 +59,17 @@ $(function () {
 			$('.maintain').show();
 		}
 	});
+
+
+	//통합,이미지 레이아웃
+	$('.tab_menu .tabimg').on('click', function () {
+		$('.snbTab_wrap, .content_wrap').addClass('imgflex');
+	});
+
+	$('.tab_menu .tabconsol').on('click', function () {
+		$('.snbTab_wrap, .content_wrap').removeClass('imgflex');
+	});
+
 });
 
 $(document).ready(function () {
