@@ -123,7 +123,7 @@
       <!-- page_tit s-->
       <div class="sta_tit_wrap">
          <div class="sta_tit">
-            <h1>프로젝트 등록</h1>
+            <h1>버전 수정</h1>
             <div class="btn_area">
                <button type="button" class="btn col_black">저장</button>
                <button type="button" class="btn ">취소</button>
@@ -134,91 +134,18 @@
       </div>
       <!-- //sticky -->
    
-      
-   
       <!-- container -->
       <div id="container">
-      
-       
-   
+
          <!-- content_wrap S-->
          <div class="content_wrap">
    
             <!-- formbg_wrap s -->
             <div class="formbg_wrap">
-               <div class="form_area">
-            
-                  <div class="form_group">
-                     <label class="control_label">사업부 선택</label>
-                     <div class="rc_wrap">
-                        <div class="radio_default">
-                           <input type="radio" id="ict" name="depart" value="" />
-                           <label for="ict">ICT사업본부</label>
-                        </div>
-                        <div class="radio_default">
-                           <input type="radio" id="cti" name="depart" value="" checked />
-                           <label for="cti">솔루션사업본부</label>
-                        </div>
-                     </div>
-                  </div>
-            
-                  <div class="form_group">
-                     <label class="control_label">프로젝트명</label>
-                     <input type="text" name="" value="" placeholder="프로젝트명 입력" class="form_control">
-                  </div>
-            
-                  <div class="form_groupRow col_6">
-                     <div class="form_group">
-                        <label class="control_label">고객사</label>
-                        <input type="text" name="" value="" placeholder="고객사명" class="form_control">
-                     </div>
-                     <div class="form_group">
-                        <label class="control_label">프로젝트 수행일</label>
-                        <input type="text" name="" value="" size="40" placeholder="2020.10"   class="form_control date">
-                     </div>
-                  </div>                  
-            
-                  <div class="form_group mgb0">
-                     <label class="control_label">사업개요</label>
-                     <textarea name="" id="" cols="30" rows="10" class="text_control" placeholder="사업개요입력"></textarea>
-                  </div>
-                        
-                  <div class="sec_line"></div> 
-
-                  <div class="form_group">
-                     <label class="control_label">하위 프로젝트명</label>
-                     <input type="text" name="" value="" placeholder="프로젝트명 입력" class="form_control">
-                  </div>
-            
-                  <div class="form_groupRow mgb0">
-                     <div class="form_group">
-                        <label class="control_label">정 담당자/부 담당자</label>
-                        <input type="text" name="" value="" placeholder="정 담당자/부 담당자" class="form_control">
-                     </div>
-                     <div class="form_group">
-                        <label class="control_label">유지보수 여부</label>
-                        <div class="rc_wrap">
-                           <div class="radio_default">
-                              <input type="radio" id="use" name="use" value="" checked />
-                              <label for="use">사용</label>
-                           </div>
-                           <div class="radio_default">
-                              <input type="radio" id="unused" name="use" value=""/>
-                              <label for="unused">미사용</label>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="form_group maintain dpnone">
-                        <label class="control_label">유지보수 기간</label>
-                        <input type="text" name="" value="" size="40" placeholder="2020.10"  class="form_control dateto">
-                     </div>
-                  </div>
-
-                  <div class="sec_line"></div> 
-
+               <div class="form_area">   
                   <div class="form_group">
                      <label class="control_label">버전명</label>
-                     <input type="text" name="" value="" placeholder="버전명 입력" class="form_control">
+                     <input type="text" name="" value="버전명" placeholder="" class="form_control">
                   </div>
 
                   <div class="form_group">
@@ -237,22 +164,23 @@
             
                   <div class="form_group">
                      <label class="control_label">비고</label>
-                     <input type="text" name="" value="" placeholder="프로젝트 진행시 특이사항 입력" class="form_control">
+                     <input type="text" name="프로젝트 진행시 특이사항" value="" placeholder="" class="form_control">
                   </div>
             
                   <div class="form_group mgb32">
                      <label class="control_label">첨부파일</label>
                      <div class="fileForm mgb9">
-                        <input type="text" name="" value="" placeholder="파일을 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요." class="form_control">
-                        <input type="text" name="" value="" placeholder="파일 간략설명 입력" class="form_control">
+                        <input type="text" name="" value="화면설계서.pptx" placeholder="" class="form_control">
+                        <input type="text" name="" value="파일 간략설명
+                        " placeholder="" class="form_control">
                         <div class="btn_plusMinus">
                            <button type="button" class="btn_pm plus mgr6" disabled>＋</button>
                            <button type="button" class="btn_pm minus">－</button>
                         </div>
                      </div>
                      <div class="fileForm">
-                        <input type="text" name="" value="" placeholder="파일을 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요." class="form_control">
-                        <input type="text" name="" value="" placeholder="파일 간략설명 입력" class="form_control">
+                        <input type="text" name="" value="이미지모음.zip" placeholder="" class="form_control">
+                        <input type="text" name="" value="파일 간략설명" placeholder="" class="form_control">
                         <div class="btn_plusMinus">
                            <button type="button" class="btn_pm plus mgr6">＋</button>
                            <button type="button" class="btn_pm minus">－</button>
@@ -270,12 +198,10 @@
                   <label class="control_label">이미지 등록</label>
                   <div class="imgRegi_area">
                      <a href="#">
-                        <div class="imgRegi_info">
-                           <img src="./images/img.png" alt="첨부파일 아이콘">
-                           <p class="info_tit">이미지를 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요.
-                           </p>
-                           <p class="info_tits">Web화면사이즈 가로 1200px사이즈 / Mobile화면사이즈 가로 360px사이즈 기준 정비율 자동 축소,확대
-                           </p>
+                        <img src="./images/web2.png" alt="샘플">
+                        <div class="imgRegi_info bg">                          
+                           <p class="info_tit">이미지를 수정하려면 이곳을 클릭하거나 여기로 드레그하세요.
+                           </p>                            
                         </div>
                      </a>
                   </div>
@@ -288,11 +214,11 @@
                         </select>
                      </div>
 
-                     <input type="text" name="" value="" placeholder="화면 간략설명 입력" class="form_control w934">                   
+                     <input type="text" name="" value="화면간략설명" placeholder="" class="form_control w934">                   
                   </div>
-                  <textarea name="" id="" cols="" rows="" class="text_control" placeholder="화면이미지 내용설명"></textarea>
+                  <textarea name="" id="" cols="" rows="" class="text_control" placeholder="">화면이미지 내용설명</textarea>
                   <div class="btn_plusMinus mgt25">
-                     <button type="button" class="btn_pm plus mgr6">＋</button>
+                     <button type="button" class="btn_pm plus mgr6"disabled>＋</button>
                      <button type="button" class="btn_pm minus">－</button>
                   </div>
                </div>
@@ -301,13 +227,11 @@
                   <label class="control_label">이미지 등록</label>
                   <div class="imgRegi_area">
                      <a href="#">
-                        <div class="imgRegi_info">
-                           <img src="./images/img.png" alt="첨부파일 아이콘">
-                           <p class="info_tit">이미지를 첨부하려면 이곳을 클릭하거나 여기로 드래그하세요.
-                           </p>
-                           <p class="info_tits">Web화면사이즈 가로 1200px사이즈 / Mobile화면사이즈 가로 360px사이즈 기준 정비율 자동 축소,확대
-                           </p>
-                        </div>
+                        <img src="./images/web2.png" alt="샘플">
+                        <div class="imgRegi_info bg">                          
+                           <p class="info_tit">이미지를 수정하려면 이곳을 클릭하거나 여기로 드레그하세요.
+                           </p>                            
+                        </div>                    
                      </a>
                   </div>
 
@@ -319,9 +243,9 @@
                         </select>
                      </div>
 
-                     <input type="text" name="" value="화면명을 입력하지 않으셨습니다." placeholder="화면 간략설명 입력" class="form_control error w934">                   
+                     <input type="text" name="" value="화면간략설명" placeholder="화면 간략설명 입력" class="form_control w934">                   
                   </div>
-                  <textarea name="" id="" cols="" rows="" class="text_control" placeholder="화면이미지 내용설명"></textarea>
+                  <textarea name="" id="" cols="" rows="" class="text_control" placeholder="">화면이미지 내용</textarea>
                   <div class="btn_plusMinus mgt25">
                      <button type="button" class="btn_pm plus mgr6">＋</button>
                      <button type="button" class="btn_pm minus">－</button>

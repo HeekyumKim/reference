@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>레퍼런스사이트</title>
+
+   <!-- 스타일 시트 -->
+  
+   <link rel="stylesheet" type="text/css" href="./css/common.css">
+   <link rel="stylesheet" type="text/css" href="./css/layout.css">
+   <link rel="stylesheet" type="text/css" href="./css/daterangepicker.css">
+ 
+
+   <!-- 스크립트 -->
+   <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+   <script  type="text/javascript" src="./js/moment.min.js"></script>
+   <script  type="text/javascript" src="./js/daterangepicker.js"></script>
+   <script  type="text/javascript" src="./js/common.js"></script>
+
+
+<script>
+   $(function () {
+
+      $('.date').daterangepicker({
+         autoUpdateInput: false,
+         singleDatePicker: true,
+         locale: {
+            monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+            daysOfWeek: ["월", "화", "수", "목", "금", "토", "일"],
+            format: "YYYY-MM-DD",
+            cancelLabel: '취소',
+            applyLabel: "확인",
+            showMonthAfterYear: false,
+            yearSuffix: '년',
+         }
+      });
+
+      $('.date').on('apply.daterangepicker', function (ev, picker) {
+         $(this).val(picker.startDate.format('YYYY-MM-DD') );
+      });
+
+      $('.date').on('cancel.daterangepicker', function (ev, picker) {
+         $(this).val('');
+      });
+
+      $('.dateto').daterangepicker({
+         autoUpdateInput: false,        
+         locale: {
+            monthNames: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+            daysOfWeek: ["월", "화", "수", "목", "금", "토", "일"],
+            format: "YYYY-MM-DD",
+            cancelLabel: '취소',
+            applyLabel: "확인",
+            showMonthAfterYear: false,
+            yearSuffix: '년',
+         }
+      });
+
+      $('.dateto').on('apply.daterangepicker', function (ev, picker) {
+                $(this).val(picker.startDate.format('YYYY/MM/DD') + ' - ' + picker.endDate.format(
+                    'YYYY/MM/DD'));
+            });
+
+      $('.dateto').on('cancel.daterangepicker', function (ev, picker) {
+         $(this).val('');
+      });
+
+   });
+
+</script>
+</head> 
+
+<body>
+   <!-- u_skip -->
+   <div id="u_skip">
+      <a href="#container">본문 바로가기</a></li>
+   </div>
+   <!-- //u_skip --> 
+
+   <div id="wrap">    
+      <!-- header -->
+      <div class="header_wrap">
+         <div class="header">
+            <div class="gnb_group">
+               <h1>
+                  <a href="#"><span class="blind">네오넥스소프트</span></a>
+               </h1>
+   
+               <div class="gnbArea">
+                  <div class="subnav">
+                     <button class="subnavbtn">레퍼런스</button>
+                     <div class="subnav_content">
+                        <a href="#">ICT 사업본부</a>
+                        <a href="#">솔루션사업본부</a>
+                     </div>
+                  </div>
+   
+                  <div class="subnav">
+                     <button class="subnavbtn">관리자메뉴</button>
+                     <div class="subnav_content">
+                        <a href="#">이력관리</a>
+                        <a href="#">사용자관리</a>
+                        <a href="#">권한관리</a>
+                        <a href="#">공통코드 관리</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+   
+            <div class="login_area">
+               <span class="regis"><a href="#">프로젝트 등록</a></span>
+               <span class="user_info">홍길동</span>
+               <span class="login"><a href="#">로그아웃</a></span>
+            </div>
+         </div>
+      </div>
+      <!-- //header -->
+   
+      <!-- sticky -->
+      <div class="sta_wrap" id="sti">
+      <!-- page_tit s-->
+      <div class="sta_tit_wrap">
+         <div class="sta_tit">
+            <h1>프로젝트 수정</h1>
+            <div class="btn_area">
+               <button type="button" class="btn col_black">저장</button>
+               <button type="button" class="btn ">취소</button>
+            </div>
+         </div>
+      </div>
+      <!-- page_tit e-->
+      </div>
+      <!-- //sticky -->
+   
+      <!-- container -->
+      <div id="container">
+   
+         <!-- content_wrap S-->
+         <div class="content_wrap">
+   
+            <!-- formbg_wrap s -->
+            <div class="formbg_wrap pdb280">
+               <div class="form_area"> 
+            
+                  <div class="form_group">
+                     <label class="control_label">프로젝트명</label>
+                     <input type="text" name="" value="프로젝트명" placeholder=" " class="form_control">
+                  </div>
+            
+                  <div class="form_groupRow col_6">
+                     <div class="form_group">
+                        <label class="control_label">고객사</label>
+                        <input type="text" name="" value="고객사명" placeholder="" class="form_control">
+                     </div>
+                     <div class="form_group">
+                        <label class="control_label">프로젝트 수행일</label>
+                        <input type="text" name="" value="2020/10" size="40" placeholder=""   class="form_control date">
+                     </div>
+                  </div>                  
+            
+                  <div class="form_group">
+                     <label class="control_label">사업개요</label>
+                     <textarea name="" id="" cols="30" rows="10" class="text_control" placeholder="">사업개요</textarea>
+                  </div>                     
+                 
+               </div>
+            </div>
+            <!-- formbg_wrap e -->  
+   
+         </div>
+         <!-- content_wrap E-->
+      </div>
+      <!-- //container -->
+   
+      <!-- footer -->
+      <div class="footer mgt0">
+         Copyright 2020 . NEONEXSoft Inc. All Rights Reserved.
+      </div>
+      <!-- //footer -->
+   </div>
+
+   <div id="topBtn"><img src="./images/top.png" alt="top버튼" width=100%></div>
+
+
+<!-- 스티키 -->
+<script>
+   window.onscroll = function () { myFunction() };
+
+   var navbar = document.getElementById("sti");
+
+   var sticky = navbar.offsetTop;
+
+   function myFunction() {
+      if (window.pageYOffset >= sticky) {
+         navbar.classList.add("sticky")
+      } else {
+         navbar.classList.remove("sticky");
+      }
+   }
+</script>
+
+
+
+
+</body>
+
+
+</html> 

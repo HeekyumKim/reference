@@ -76,6 +76,9 @@
 /* Margin */
 
 /* *위* */
+.mgt0 {
+    margin-top: 0px !important
+}
 .mgt5 {
     margin-top: 5px
 }
@@ -170,11 +173,13 @@
 /* Padding */
 
 /* *위* */
+.pdt25{padding-top:25px !important}
 
 /* *오른쪽* */
 
 /* *아래* */
-
+.pdb280{padding-bottom:280px}
+.pdb440{padding-bottom:440px}
 /* *왼쪽* */
 
 
@@ -573,6 +578,7 @@ input[type="checkbox"] {
 
 .btn_plusMinus>button:disabled {
     background-color: rgba(102, 102, 102, .25);
+    cursor: auto;
 }
 
 
