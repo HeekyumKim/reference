@@ -1298,12 +1298,35 @@
     position: relative;
 }
 
-.form_group > .fileForm > input:nth-child(1) {
-    width: 500px;
+.form_group > .fileForm > .file_control {
     margin-right: 12px;
+    width: 500px;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
-.form_group > .fileForm > input:nth-child(2) {
+.form_group > .fileForm > .file_control > a {
+    display: inline-block;
+    width: 500px;
+    height: 46px;
+    padding: 10px 17px;
+    font-family: 'NotoS_L';
+    font-size: 18px;
+    line-height: 24px;
+    color: #B5B5B5;
+}
+
+.form_group > .fileForm > .file_control > a> span.fileName{
+    color: #282828;
+    font-family: NotoS_R;
+}
+.form_group > .fileForm > .file_control > a:active {
+    border: 2px solid #2782CE;
+    border-radius: 4px;
+}
+
+.form_group > .fileForm > input {
     width: 587px;
     margin-right: 6px;
 }

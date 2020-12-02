@@ -45,7 +45,6 @@
 
 .gg-element {
     overflow: hidden;
-    /* max-width: 373px; */
     max-width: 343px;
     max-height: 193px;
     border: 1px solid #dadada;
@@ -63,63 +62,28 @@
 }
 
 .gg-box.add {
-    display: inline-flex;
-    padding-right: 740px;
+    display:inline-flex;
+    width: calc(100% - 730px);
+    /* padding-right: 740px; */
 }
-
-/*.gg-box.add {
-  display:inline-flex;
- padding-right:740px 
-}
-*/
 
 .gg-box.add .ggwrap {
-    width: 25%;
+    width: 33.3333%;
 }
 
 .gg-box.add .ggwrap .gg-element {
-    height: 160px;
+    height: auto;
 }
-
-/* #gg-screen {
-    display: none;
-    overflow: scroll;
-    position: sticky;
-    z-index: 999; 
-    top: 268px;
-    right: 0;
-    width: 730px;
-    height: 100%;
-    padding: 77px 42px 0 43px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #111112;
-} */
-
-/* #gg-screen {
-    display: none;
-    overflow-y: scroll;
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    right: 0;
-    width: 730px;
-    height: 100%;
-    padding: 77px 42px 0 43px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #111112;
-} */
 
 #gg-screen {
     display: none;
-    overflow-y: scroll;
+    overflow-y: auto;
     position: fixed;
     z-index: 999;
     top: 0;
     right: 0;
     margin-top: 250px;
-    width: 730px;
+    min-width: 730px;
     height: calc(100vh - 250px);
     padding: 77px 42px 0 43px;
     text-align: center;
@@ -178,15 +142,15 @@
 }
 
 .gg-bt {
-  display: inline-block;
-  
+    display: inline-block;
     color: #fff;
     font-size: 30px;
     text-align: center;
     line-height: 24px;
     vertical-align: middle;
-    cursor: pointer;   
+    cursor: pointer;
 }
+
 
 /* .gg-bt:hover{
     background: rgba(255,255,255,0.8);
@@ -194,27 +158,28 @@
   } */
 
 .gg-close {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-}
-
-.gg-nxt {
-  width: 20px;
-  height: 36px;  
-  background-image: url("../images/move_rignt.png");
-  right: 42px;
-}
-
-.gg-prev {
-  width: 20px;
-  height: 36px;  
-  background-image: url("../images/move_left.png");
-  left: 43px;
+    position: fixed;
+    top: 274px;
+    right: 42px;
 }
 
 .gg-nxt,
 .gg-prev {
-    position: absolute;
-    top: 239px;
+    position: fixed;
+    top: 274px;
+    margin-top: 239px;
+    width: 20px;
+    height: 36px;
 }
+
+.gg-nxt {
+    right: 59px;
+    background-image: url("../images/move_rignt.png");
+}
+
+.gg-prev {
+    background-image: url("../images/move_left.png");
+    right: 670px;
+}
+
+
