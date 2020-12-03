@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    min-width: 1417px;
+    min-width: 1420px;
     margin: 0 auto;
     padding: 0;
 }
@@ -27,6 +27,7 @@
     width: 100%;
     background-color: #fff;
 } */
+
 .header_wrap {
     position: relative;
     z-index: 900;
@@ -742,8 +743,6 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 25px;
-    padding-right: 27px;
-    padding-left: 27px;
 }
 .content_wrap.imgflex .content_list {
     width: 100%;
@@ -964,22 +963,17 @@
 
 .listBox .box_right {
     overflow: hidden;
-    display: flex;
+    display: inline-block;
     position: relative;
     width: 384px;
+    text-align: center;
     background-color: #F9FAFB;
 }
 
 .listBox .box_right img {
     display: inline-block;
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.listBox .box_right.mo img {
-    display: inline-block;
-    width: 33.3333%;
+    height: auto;
     margin: 0 auto;
 }
 

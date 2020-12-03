@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+.tab_content.img_content {
+    position: relative;
+    width: 100%;
+    min-width: 1420px;
+    padding-right: 27px;
+    padding-left: 27px;
+}
+
+
+.tab_content.img_content >.imgBox {
+    position: relative;
+    display:inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imgBox > .gg-box {
+    position: relative;
+    width: 100%;
+    font-size: 0;  
+}
+
+.ggwrap {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    /* max-width: 373px;
+    max-height: 223px; */
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+
+.ggwrap .check_default {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width:17px;
+    height: 17px;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+
+.gg-element {
+    overflow: hidden;
+    width: 100%;
+    max-width: 343px;
+    max-height: 193px;
+    border: 1px solid #dadada;  
+}
+
+.gg-element img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.gg-element .tototo {
+    display: none;
+}
+
+
+.gg-box.add {
+    display:flex;
+    flex-wrap: wrap;
+    width: calc(100% - 726px);
+}
+
+.gg-box.add .ggwrap {
+    display: block;
+    position: relative;
+    width: 33.3333%;
+    /* min-width: 298px;
+    min-height: 181px; */
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* .gg-box.add .ggwrap .gg-element
+{    min-height: 151px;
+
+} */
+#gg-screen {
+    display: none;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    max-width: 742px;
+    min-width:400px;
+    height: calc(100vh - 250px);
+    padding: 77px 42px 0 43px;
+    margin-top: 250px;
+    text-align: center;
+    background-color: #111112;
+}
+
+#gg-screen img {
+    display: block;
+    margin: 0 auto;
+    max-width: 640px;
+    height: auto;
+}
+
+
+#gg-screen .tototo {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#gg-screen .tototo button {
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    width: 32px;
+    height: 32px;
+    background: url("../images/btn_download.png") no-repeat right top;
+}
+
+
+#gg-screen .tototo .gg-img-tit {
+    display: block;
+    overflow: hidden;
+    margin-top: 51px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#gg-screen .tototo .gg-img-tit:hover {
+    text-decoration: underline;
+}
+
+#gg-screen .tototo span {
+    display: block;
+    font-size: 15px;
+    color: rgba(250,250,250, 0.64);
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.gg-bt {
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.gg-close {
+    position: fixed;
+    top: 274px;
+    right: 42px;
+}
+
+.gg-nxt,
+.gg-prev {
+    position: absolute;
+    top: 239px;
+    width: 20px;
+    height: 36px;
+}
+
+.gg-nxt {
+    right: 42px;
+    background-image: url("../images/move_rignt.png");
+}
+
+.gg-prev {
+    background-image: url("../images/move_left.png");
+    left: 43px;
+}
+
+
