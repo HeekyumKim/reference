@@ -856,6 +856,16 @@ select::-ms-expand {
 }
 /* //Pagination */
 
+
+.nodata {
+    height: 230px;
+    text-align: center;
+    line-height: 230px;
+    font-size: 15pt;
+    color: #000000;
+}
+
+
 /* popup */
 .ly_group, .ly_group_s,
 [class*="layer_"] {
