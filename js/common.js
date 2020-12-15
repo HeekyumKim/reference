@@ -17,8 +17,6 @@ $(function () {
 
 });
 
-
-
 // top버튼
 $(function () {
     $(window).scroll(function () {
