@@ -73,7 +73,7 @@
                                 <a href="#">이력관리</a>
                                 <a href="#">사용자관리</a>
                                 <a href="#">권한관리</a>
-                                <a href="#">공통코드 관리</a>
+                                <!-- <a href="#">공통코드 관리</a> -->
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                         <li class="snbtit"><a href="#"><span class="blind">화살표</span>이력관리</a></li>
                         <li class="snbtit"><a href="#"><span class="blind">화살표</span>사용자관리</a></li>
                         <li class="snbtit"><a href="#" class="active"><span class="blind">화살표</span>권한관리</a></li>
-                        <li class="snbtit"><a href="#"><span class="blind">화살표</span>공통코드관리</a></li>
+                        <!-- <li class="snbtit"><a href="#"><span class="blind">화살표</span>공통코드관리</a></li> -->
                     </ul>
                 </div>
                 <!-- //snb -->
@@ -127,7 +127,7 @@
                 <div class="listWrap admin">
 
                     <!-- content s-->
-                    <div class="content_list">                        
+                    <div class="content_list">
                         <h2>기본정보 <span>최종 수정일 2020-10-30 15:20:30</span></h2>
                         <!-- form -->
                         <div class="form_groupRow">
@@ -156,21 +156,24 @@
                             <table class="tbl_list" summary="테이블 입니다. 항목으로는 등이 있습니다">
                                 <caption>테이블</caption>
                                 <colgroup>
-                                    <col width="250px" />
+                                    <col width="180px" />
+                                    <col width="" />
                                     <col width="" />
                                 </colgroup>
                                 <thead>
                                     <tr>
-                                        <th scope="col">메뉴명</th>
+                                        <th scope="col">1 Depth</th>
+                                        <th scope="col">2 Depth</th>
                                         <th scope="col">기능권한</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td rowspan="2">레퍼런스</td>
                                         <td>
                                             <div class="check_default admin">
                                                 <input type="checkbox" id="checkbox1" checked="checked" />
-                                                <label for="checkbox1">레퍼런스 ICT</label>
+                                                <label for="checkbox1">ICT사업본부</label>
                                             </div>
                                         </td>
                                         <td>
@@ -192,24 +195,24 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>
+                                    <tr class="bg-white">
+                                        <td class="pdl10">
                                             <div class="check_default admin">
                                                 <input type="checkbox" id="checkbox2" />
-                                                <label for="checkbox2">레퍼런스 CTI</label>
+                                                <label for="checkbox2">솔루션사업본부</label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check_default disabled admin">
-                                                <input type="checkbox" id="checkbox2-1" disabled />
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox2-1" />
                                                 <label for="checkbox2-1">열람</label>
                                             </div>
-                                            <div class="check_default disabled admin">
-                                                <input type="checkbox" id="checkbox2-2" disabled />
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox2-2" />
                                                 <label for="checkbox2-2">다운로드</label>
                                             </div>
-                                            <div class="check_default disabled admin">
-                                                <input type="checkbox" id="checkbox2-3" disabled />
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox2-3" />
                                                 <label for="checkbox2-3">등록/수정</label>
                                             </div>
                                             <div class="check_default disabled admin">
@@ -219,16 +222,57 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td rowspan="3">관리자메뉴</td>
                                         <td>
                                             <div class="check_default admin">
                                                 <input type="checkbox" id="checkbox3" />
-                                                <label for="checkbox3">관리자 메뉴</label>
+                                                <label for="checkbox3">이력관리</label>
                                             </div>
                                         </td>
                                         <td>
-                                            <div class="check_default disabled admin">
-                                                <input type="checkbox" id="checkbox3-1" disabled />
-                                                <label for="checkbox3-1">사용</label>
+                                            <div class="radio_default admin">
+                                                <input type="radio" id="radio03-1" name="radio03" value="" />
+                                                <label for="radio03-1">사용</label>
+                                            </div>
+                                            <div class="radio_default admin">
+                                                <input type="radio" id="radio03-2" name="radio03" value="" checked />
+                                                <label for="radio03-2">미사용</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="pdl10">
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox4" />
+                                                <label for="checkbox4">사용자관리</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_default admin">
+                                                <input type="radio" id="radio04-1" name="radio04" value="" />
+                                                <label for="radio04-1">사용</label>
+                                            </div>
+                                            <div class="radio_default admin">
+                                                <input type="radio" id="radio04-2" name="radio04" value="" checked />
+                                                <label for="radio04-2">미사용</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pdl10">
+                                            <div class="check_default admin">
+                                                <input type="checkbox" id="checkbox5" />
+                                                <label for="checkbox5">권한관리</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="radio_default admin">
+                                                <input type="radio" id="radio05-1" name="radio05" value="" />
+                                                <label for="radio05-1">사용</label>
+                                            </div>
+                                            <div class="radio_default admin">
+                                                <input type="radio" id="radio05-2" name="radio05" value="" checked />
+                                                <label for="radio05-2">미사용</label>
                                             </div>
                                         </td>
                                     </tr>

@@ -181,6 +181,7 @@
 .pdb280{padding-bottom:280px}
 .pdb440{padding-bottom:440px}
 /* *왼쪽* */
+.pdl10 {padding-left: 10px !important;}
 
 
 /* Text-align */
@@ -224,6 +225,10 @@
 
 .bb0 {
     border-bottom: 0px !important
+}
+
+.bg-white {
+    background-color: #fff !important;
 }
 
 
