@@ -51,13 +51,17 @@
     width: 100%;
     max-width: 343px;
     max-height: 193px;
+    line-height: 193px;
     border: 1px solid #dadada;  
+    vertical-align: middle;
+    background-color: #F9FAFB;
 }
 
 .gg-element img {
     display: inline-block;
     width: 100%;
     height: auto;
+    vertical-align: middle;
     cursor: pointer;
 }
 
