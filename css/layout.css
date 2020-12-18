@@ -165,7 +165,7 @@
 .login_area {
     position: relative;
     top: 27px;
-    height: 20px;
+    height: 24px;
 }
 
 .login_area span {
@@ -181,8 +181,9 @@
 }
 
 .login_area .regis a {
+    display: inline-block;
     background: url("../images/icon_re.png") no-repeat 0 0;
-    padding-left: 22px;
+    padding-left: 24px;
     font-family: 'Notos_B';
     color: #666;
 }
@@ -452,6 +453,7 @@
 .updown_wrap .clientDate {
     overflow: hidden;
     position: relative;
+    margin-top:17px;
 }
 .updown_wrap .clientDate span {
     display: block;
@@ -516,7 +518,7 @@
     display: inline-block;
     max-width: 1200px;
     font-size: 15px;
-    line-height: 1.2;
+    line-height: 1.5;
     white-space: normal;
     text-overflow: clip;
     word-break: normal;
@@ -801,6 +803,7 @@
     right: 0;
     font-size: 13px;
     font-family: NotoS_R;
+    font-weight:normal;
     color: #282828;
     opacity: 0.56;
 }
@@ -823,9 +826,9 @@
 }
 
 /* = tabMenu content s = */
-.tab_cont_wrap > div {
+/* .tab_cont_wrap > div {
     display: none;
-}
+} */
 
 .tab_cont_wrap {
     position: relative;
