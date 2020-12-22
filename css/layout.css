@@ -1058,7 +1058,7 @@
 }
 .view_WM_wrap .mobileimgArea .mobileImg img {
     width: 360px;
-    height: 640px;
+    height: auto;
 }
 
 .view_WM_wrap .wmtit {
