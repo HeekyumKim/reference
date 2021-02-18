@@ -193,14 +193,14 @@
     display: block;
     position: absolute;
     top: 50%;
-    left: 0;
+    right: -10px;
     width: 1px;
     height: 10px;
     margin-top: -5px;
     background-color: #dadada;
 }
 
-.login_area span.regis::after {
+.login_area span.login::after {
     display: none;
 }
 
