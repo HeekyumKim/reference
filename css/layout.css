@@ -1710,3 +1710,12 @@
 }
 
 /* //topbtn */
+
+.noImage {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 16px;
+    background: url(../images/icon_noImage.png) center top no-repeat;
+    background-size: auto 30px;
+}
