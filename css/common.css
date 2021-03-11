@@ -578,6 +578,7 @@ input[type="checkbox"] {
     font-size: 0;
     width: 94px;
     height: 44px;
+    text-align: center;
     margin: 0 auto;
 }
 
