@@ -251,15 +251,15 @@
     z-index: 1001;
 }
 
-.sticky+#container {
+.sticky~#container {
     padding-top: 152px;
 }
 
-.sticky+#container.admin {
+.sticky~#container.admin {
     padding-top: 90px;
 }
 
-.sticky+#container.cti {
+.sticky~#container.cti {
     padding-top: 373px;
 }
 
